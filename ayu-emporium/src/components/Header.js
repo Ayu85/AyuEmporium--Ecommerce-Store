@@ -5,7 +5,7 @@ import { MdOutlineNavigateNext } from "react-icons/md";
 
 const Header = () => {
     return (
-        <div className=' rounded-2xl flex items-center fixed top-8 z-[999999] 
+        <div className='  rounded-t-2xl flex items-center fixed top-8 z-[999999] 
         justify-between py-5   px-5 bg-[#1C161A] w-[75%]  ' >
             <div >
                 <ul className='flex gap-4  text-md  text-white tracking-wide cursor-pointer'> {
@@ -22,6 +22,7 @@ const Header = () => {
                 <FaUserCircle className='text-white text-2xl' />
                 <ImCart className='text-white text-xl' />
             </div>
+            <div className='absolute top-24 w-full left-0 bg-white h-56 px-5 rounded-b-2xl '>asdad</div>
         </div>
     )
 }
