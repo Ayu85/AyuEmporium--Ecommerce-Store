@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaUserCircle } from "react-icons/fa";
 import { ImCart } from "react-icons/im";
-import { IoIosArrowDown } from "react-icons/io";
+import { MdOutlineNavigateNext } from "react-icons/md";
 
 const Header = () => {
     return (
@@ -10,8 +10,8 @@ const Header = () => {
             <div >
                 <ul className='flex gap-4  text-md  text-white tracking-wide cursor-pointer'> {
                     ['Home', 'Shop', 'Carrers', 'About'].map((list_items) => {
-                        return <li className='flex -pb-5  h-14 items-center gap-1 hover:text-[#FFB71B] transition-all '>
-                            {list_items}<IoIosArrowDown />
+                        return <li className='flex group -pb-5  h-14 items-center hover:text-[#FFB71B] transition-all '>
+                            {list_items}<MdOutlineNavigateNext className='group-hover:rotate-90 transition-all text-2xl' />
                         </li>
                     })
                 }</ul>
