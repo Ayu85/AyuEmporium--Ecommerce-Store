@@ -3,7 +3,7 @@ import CategoryCard from './CategoryCard'
 
 const Categories = () => {
   return (
-    <div>
+    <div className='bg-[#FFF8F4] '>
       <CategoryCard/>
     </div>
   )
