@@ -50,9 +50,25 @@ const Header = () => {
                     }
                     </ul>
                 </div>
+                <div>
+                    <h1 className='text-xl font-bold text-[#F7221E]'>Beauty</h1>
+                    <ul className='py-3 flex flex-col gap-1 text-sm font-semibold'>{
+                        ['Lipsticks', 'Maskara', 'Eyeliner', 'Eye Shadow', 'Face Creams'].map((items, keys) => {
+                            return <li className='text-slate-600 tracking-wide cursor-pointer'>{items}</li>
+                        })
+                    }
+                    </ul>
+                </div>
+                <div>
+                    <h1 className='text-xl font-bold text-[#F7221E]'>Home Decor</h1>
+                    <ul className='py-3 flex flex-col gap-1 text-sm font-semibold'>{
+                        [' Plants & Planters', 'Clocks', 'Mirrors', 'Sofa Set', 'Chairs','Wall Hangings','Paintings'].map((items, keys) => {
+                            return <li className='text-slate-600 tracking-wide cursor-pointer'>{items}</li>
+                        })
+                    }
+                    </ul>
+                </div>
 
-                <div>Healthcare</div>
-                <div>Beauty</div>
             </div>
         </div>
     )
