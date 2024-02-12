@@ -1,4 +1,5 @@
 import React from 'react'
+import heroImg from '../assets/heroImg.png'
 import Header from './Header'
 const Herosection = () => {
   return (
@@ -7,9 +8,12 @@ const Herosection = () => {
       <div className='text-black z-50'>
         {
           ['Shop', 'Click', 'Thrive:Your E-Commerce Destination'].map((items, key) => {
-            return <h1>{items}</h1>
+            return <h1 className={`text-7xl hero_title  ${key===2&&'text-white w-[700px] text-5xl'}`}>{items}</h1>
           })
         }
+      </div>
+      <div>
+        <img src={heroImg} alt='logo'/>
       </div>
     </div>
   )
