@@ -13,3 +13,5 @@ const showCategories = createSlice({
         }
     }
 })
+export default showCategories.reducer;
+export const { toogleCategories } = showCategories.actions
