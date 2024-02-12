@@ -2,16 +2,23 @@ import React from 'react'
 import { FaUserCircle } from "react-icons/fa";
 import { ImCart } from "react-icons/im";
 import { MdOutlineNavigateNext } from "react-icons/md";
-
+import { useDispatch, useSelector } from 'react-redux'
+import { toogleCategories } from './redux/slices/showCategories'
 const Header = () => {
+    const dispatch = useDispatch();
+    const showCategories = useSelector(store => store.categoriesView.value)
     return (
         <div className='  rounded-t-2xl flex items-center fixed top-8 z-[999999] 
-        justify-between py-5   px-5 bg-[#1C161A] w-[75%]  ' >
+        justify-between  px-5 bg-[#1C161A] w-[75%]  ' >
             <div >
                 <ul className='flex gap-4  text-md  text-white tracking-wide cursor-pointer'> {
-                    ['Home', 'Shop', 'Carrers', 'About'].map((list_items) => {
-                        return <li className='flex group -pb-5  h-14 items-center hover:text-[#FFB71B] transition-all '>
-                            {list_items}<MdOutlineNavigateNext className='group-hover:rotate-90 transition-all text-2xl' />
+                    ['Home', 'Shop', 'Carrers', 'About'].map((list_item, keys) => {
+                        return <li onMouseEnter={() => {
+                            keys === 1 && dispatch(toogleCategories())
+                        }} onMouseLeave={() => {
+                            keys === 1 && dispatch(toogleCategories())
+                        }} className={`  flex group h-24 items-center hover:text-[#FFB71B] transition-all`} >
+                            {list_item}<MdOutlineNavigateNext className='group-hover:rotate-90 transition-all text-2xl' />
                         </li>
                     })
                 }</ul>
@@ -22,7 +29,7 @@ const Header = () => {
                 <FaUserCircle className='text-white text-2xl' />
                 <ImCart className='text-white text-xl' />
             </div>
-            <div className='absolute flex justify-evenly pt-2 top-24 w-full left-0 bg-white h-56 px-5 rounded-b-2xl '>
+            {showCategories && <div className={` absolute flex transition-all  justify-evenly pt-2 top-24 w-full left-0 bg-white h-56 px-5 rounded-b-2xl `}>
                 <div>
                     <h1 className='text-xl font-bold text-[#F7221E]'>Men</h1>
                     <ul className='py-3 flex flex-col gap-1 text-sm font-semibold'>{
@@ -68,7 +75,7 @@ const Header = () => {
                     }
                     </ul>
                 </div>
-            </div>
+            </div>}
         </div>
     )
 }
