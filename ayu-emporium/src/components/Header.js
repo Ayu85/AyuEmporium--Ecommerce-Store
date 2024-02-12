@@ -22,7 +22,7 @@ const Header = () => {
                 <FaUserCircle className='text-white text-2xl' />
                 <ImCart className='text-white text-xl' />
             </div>
-            <div className='absolute flex justify-evenly top-24 w-full left-0 bg-white h-56 px-5 rounded-b-2xl '>
+            <div className='absolute flex justify-evenly pt-2 top-24 w-full left-0 bg-white h-56 px-5 rounded-b-2xl '>
                 <div>
                     <h1 className='text-xl font-bold text-[#F7221E]'>Men</h1>
                     <ul className='py-3 flex flex-col gap-1 text-sm font-semibold'>{
@@ -41,7 +41,16 @@ const Header = () => {
                     }
                     </ul>
                 </div>
-                <div>Kids</div>
+                <div>
+                    <h1 className='text-xl font-bold text-[#F7221E]'>Kids</h1>
+                    <ul className='py-3 flex flex-col gap-1 text-sm font-semibold'>{
+                        ['Tishirt', 'Shirt', 'Jeans and Trouser', 'Track Pant', 'Party Wear'].map((items, keys) => {
+                            return <li className='text-slate-600 tracking-wide cursor-pointer'>{items}</li>
+                        })
+                    }
+                    </ul>
+                </div>
+
                 <div>Healthcare</div>
                 <div>Beauty</div>
             </div>
