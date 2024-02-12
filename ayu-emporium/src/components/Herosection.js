@@ -14,7 +14,7 @@ const Herosection = () => {
         <div className='text-black '>
           {
             ['Shop', 'Click', 'Thrive:Your E-Commerce Destination'].map((items, key) => {
-              return <h1 className={`lg:text-6xl md:text-5xl hero_title py-3
+              return <h1 className={`lg:text-6xl md:text-5xl text-4xl  hero_title py-3
                ${key === 1 && 'text-[#F7221E]  lg:text-6xl md:5xl'}
                 ${key === 2 && 'text-white lg:w-[550px] w-96 lg:text-4xl md:xl tracking-wider'}`}>
                 <motion.span
