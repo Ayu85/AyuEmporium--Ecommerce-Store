@@ -3,8 +3,10 @@ import heroImg from '../assets/heroImg3.png'
 import Header from './Header'
 const Herosection = () => {
   return (
-    <div className=' flex flex-col gap-16 justify-center items-center  h-[100vh] bg-[#FFB71B] '>
+    <div className=' flex relative flex-col gap-16 justify-center items-center  h-[100vh] bg-[#FFB71B] '>
       <Header />
+      <img src='https://cdn.shopify.com/s/files/1/0393/0007/1555/files/christmas_elements-desktop.png?v=1701336847'
+        alt='bg' className='absolute -z-0' />
       <div className='flex items-center justify-between  w-[75%]'>
         <div className='text-black z-50'>
           {
@@ -15,8 +17,8 @@ const Herosection = () => {
             })
           }
         </div>
-        <div className='-mr-16 -mt-24'>
-          <img src={heroImg} alt='logo' className='w-[400px]' />
+        <div className='-mr-16 mt-10 '>
+          <img src={heroImg} alt='logo' className='w-[450px]' />
         </div>
       </div>
     </div>
