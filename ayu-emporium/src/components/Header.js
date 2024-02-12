@@ -29,7 +29,7 @@ const Header = () => {
                 <FaUserCircle className='text-white text-2xl' />
                 <ImCart className='text-white text-xl' />
             </div>
-            {showCategories && <div className={` absolute flex transition-all  justify-evenly pt-2 top-24 w-full left-0 bg-white h-56 px-5 rounded-b-2xl `}>
+            {showCategories && <div className={` absolute flex transition-all  justify-evenly pt-2 top-20 w-full left-0 bg-white h-56 px-5 rounded-b-2xl `}>
                 <div>
                     <h1 className='text-xl font-bold text-[#F7221E]'>Men</h1>
                     <ul className='py-3 flex flex-col gap-1 text-sm font-semibold'>{
