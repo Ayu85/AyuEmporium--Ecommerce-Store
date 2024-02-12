@@ -6,7 +6,7 @@ import blob from '../assets/blob vector.png'
 const Herosection = () => {
 
   return (
-    <div className=' flex  flex-col gap-16 justify-center items-center  h-[110vh] bg-[#FFB71B] '>
+    <div className=' flex relative flex-col gap-16 justify-center items-center  h-[110vh] bg-[#FFB71B] '>
       <Header />
       {/* <img src='https://cdn.shopify.com/s/files/1/0393/0007/1555/files/christmas_elements-desktop.png?v=1701336847' */}
       {/* alt='bg' className='absolute -z-0' /> */}
@@ -14,17 +14,17 @@ const Herosection = () => {
         <div className='text-black '>
           {
             ['Shop', 'Click', 'Thrive:Your E-Commerce Destination'].map((items, key) => {
-              return <h1 className={`text-7xl hero_title py-3
-               ${key === 1 && 'text-[#F7221E]  text-6xl'}
-                ${key === 2 && 'text-white w-[550px] text-4xl tracking-wider'}`}>
+              return <h1 className={`lg:text-6xl md:text-5xl hero_title py-3
+               ${key === 1 && 'text-[#F7221E]  lg:text-6xl md:5xl'}
+                ${key === 2 && 'text-white lg:w-[550px] w-96 lg:text-4xl md:xl tracking-wider'}`}>
                 <motion.span
-                  id='square' className={`${key === 1 && 'bg-[#F7221E] pl-44 h-24 '}`}></motion.span>{items}</h1>
+                  id='square' className={`${key === 1 && 'bg-[#F7221E] lg:pl-44 lg:h-24 md:pl-32 md:h-14 '}`}></motion.span>{items}</h1>
             })
           }
         </div>
-        <div className='-mr-16 mt-10 relative'>
+        <div className='-mr-16 mt-10 relative w-[450px] '>
           <img src={heroImg} alt='logo' className='w-[450px] z-50 relative' />
-          <img src={blob} alt='blob' className='absolute w-[450px] top-52  z-10 animate-[spin_linear_3s_infinite]'/>
+          <img src={blob} alt='blob' className='hidden md:block lg:block absolute w-[450px] lg:top-44 md:top-20  z-10 animate-[spin_linear_3s_infinite]' />
         </div>
       </div>
     </div>
