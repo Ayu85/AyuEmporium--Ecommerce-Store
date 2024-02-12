@@ -20,4 +20,20 @@ body {
 
 .slider {
   font-family: 'Kanit', sans-serif;
+  animation: slide 25000ms infinite linear;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px)
+  }
+  50% {
+    transform: translateX(-1500px);
+
+  }
+
+  100% {
+    transform: translateX(0px);
+
+  }
 }
