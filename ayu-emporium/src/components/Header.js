@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const Header = () => {
     return (
-        <div className='absolute top-8 rounded-2xl left-1/2 -translate-x-1/2 flex items-center 
+        <div className=' rounded-2xl flex items-center 
         justify-between py-5   px-5 bg-[#1C161A] w-[75%]  ' >
             <div >
                 <ul className='flex gap-4  text-md  text-white tracking-wide cursor-pointer'> {
