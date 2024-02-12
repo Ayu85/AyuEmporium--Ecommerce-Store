@@ -3,7 +3,13 @@ import CategoryCard from './CategoryCard'
 
 const Categories = () => {
   return (
-    <div className='bg-[#FFF8F4] '>
+    <div className='bg-[#FFF8F4] flex gap-3 flex-wrap justify-center pt-20 '>
+      <CategoryCard/>
+      <CategoryCard/>
+      <CategoryCard/>
+      <CategoryCard/>
+      <CategoryCard/>
+      <CategoryCard/>
       <CategoryCard/>
     </div>
   )
