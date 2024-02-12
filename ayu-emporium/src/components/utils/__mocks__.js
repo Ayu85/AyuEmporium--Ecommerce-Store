@@ -28,5 +28,25 @@ export const categories = [
         logo: 'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7215043/2023/4/17/df2fa87a-821e-455b-b680-acf1450e7e521681708544808-QUIERO-Women-Navy-Blue--Pink-Floral-Printed-Flared-Jumpsuit--1.jpg',
         name: 'Party Wear',
         discount: '50-80% OFF'
-    }
+    },
+    {
+        logo: 'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/20200998/2023/11/25/f58e7e62-1317-4d26-8201-e6dccb01cb6a1700899105417-Plum-BodyLovin-Vegan-Orchid-You-Not-Body-Mist---100-ml-43417-1.jpg',
+        name: 'Personal Care',
+        discount: '20-40% OFF'
+    },
+    {
+        logo: 'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/14904910/2021/7/22/db9a455a-98f1-4af9-846f-13bc8884f1f21626971200530Gold-tonedStainlessSteelFlatCurbPatternNeckChain1.jpg',
+        name: 'Fashion Accessories',
+        discount: '30-60% OFF'
+    },
+    {
+        logo: 'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/14948182/2021/7/27/25d4b0f5-2b11-409d-b2ce-bd664736b9a01627371815885Skmei1.jpg',
+        name: 'Grooming',
+        discount: '30-60% OFF'
+    },
+    {
+        logo: 'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/11/10/8e3d07ef-2575-42e7-ad52-579d58e91e5e1604951018883-1.jpg',
+        name: 'Home Decor',
+        discount: '30-60% OFF'
+    },
 ]
