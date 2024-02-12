@@ -5,7 +5,6 @@ import Herosection from './Herosection'
 const Body = () => {
     return (
         <>
-            <Header />
             <Herosection />
         </>
     )
