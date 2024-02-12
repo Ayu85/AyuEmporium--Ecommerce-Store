@@ -6,7 +6,7 @@ import { RiSecurePaymentLine } from "react-icons/ri";
 
 const Whyus = () => {
     return (
-        <div className='flex gap-5 flex-wrap items-center justify-center bg-[#faf2e5] py-4 px-14'>
+        <div className='flex gap-5 flex-wrap items-center justify-center bg-[#FFF8F4] py-4 px-14'>
             <div className='flex group hover:bg-[#1C161A] hover:scale-105 transition-all hover:text-slate-200 cursor-pointer flex-col gap-2 items-center rounded-xl justify-center border-slate-600 border px-3 py-4 w-80 text-center '>
                 <BsTextareaResize className='text-4xl' />
                 <h1 className='text-xl font-semibold text-slate-600 group-hover:text-slate-300'>Fit or Free</h1>
