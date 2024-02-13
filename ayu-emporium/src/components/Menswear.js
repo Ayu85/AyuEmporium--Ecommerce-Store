@@ -8,11 +8,11 @@ const Menswear = () => {
         document.title = 'Mens Wear - AyuEmporium'
     }, [])
     return (
-        <div className='flex items-center justify-center'>
+        <div className='flex flex-col items-center justify-center'>
             <Header2 />
-            <div>
+            <div className='flex gap-3 flex-wrap'>
                 {
-                    menswear.map((product) => {
+                    menswear.map((product, keys) => {
                         return <ProductCard {...product} />
                     })
                 }
