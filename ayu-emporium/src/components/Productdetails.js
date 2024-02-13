@@ -7,15 +7,16 @@ const Productdetails = () => {
     const [id] = useState(prodId.id)
     const [data, setData] = useState(null)
     useEffect(() => {
-        const d = filterData(menswear)
-        setData(d)
+        const d = filterData()
+        setData(d[0])
     }, [])
-    const filterData = (mock) => {
+    console.log(data);
+    const filterData = () => {
         return menswear.filter((items) => {
             return items.id == id
         })
     }
-   
+
     return (
         <div>
             <Header2 />
