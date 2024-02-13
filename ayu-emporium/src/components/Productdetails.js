@@ -40,7 +40,7 @@ const Details = () => {
             </div>
 
             <div className='flex flex-col gap-2 border-b border-slate-300 pb-3'>
-                <div className=' flex items-center gap-4 '>
+                <div className=' flex items-center gap-4 mt-3'>
                     <h1 className='text-2xl font-bold text-[#282C3F] uppercase'>Rs. {data?.details?.bestPrice?.price?.discounted}</h1>
                     <h1 className='text-[#757884] text-xl font-sans line-clamp-2 line-through'>MRP Rs.{data?.details?.bestPrice?.price?.mrp}</h1>
                     <h1 className=' text-xl text-[#FFB71B] font-semibold'>(Rs.{data?.details?.bestPrice?.price?.mrp - data?.details?.bestPrice?.price?.discounted} OFF)</h1>
