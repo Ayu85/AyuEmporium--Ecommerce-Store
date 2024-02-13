@@ -789,7 +789,7 @@ export const menswear = [
         "name": "Slim Fit Chambray Shirt",
         "about": "Add a touch of sophistication to your look with this slim fit chambray shirt. Its sleek design and versatile style make it a wardrobe essential.",
         "discount": "15%",
-        id: 6,
+        id: 3,
         "price": "$54.99",
         display_images: ['https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/27283502/2024/2/1/cd4d9c12-b659-4d61-8768-3af4ee470efa1706796424108PowerlookMenTartanChecksOpaqueCheckedCasualShirt1.jpg',
             'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/27283502/2024/2/1/dd3f9ddb-964c-4c23-98ce-2b90767351f91706796424091PowerlookMenTartanChecksOpaqueCheckedCasualShirt2.jpg',
@@ -1030,7 +1030,7 @@ export const menswear = [
         image: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg',
         name: 'HERE&NOW',
         price: 699,
-        discount: '40% ', id: 3,
+        discount: '40% ', id: 4,
         about: 'Slim Fit Casual Shirt ',
         display_images: ['https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg',
             'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/380dfa31-097e-435a-bebb-b9e887be1e841662468109153Shirts2.jpg',
@@ -1398,7 +1398,7 @@ export const menswear = [
         image: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg',
         name: 'Roadster',
         price: 951,
-        discount: '60% ', id: 4,
+        discount: '60% ', id: 5,
         about: 'Mens Pure Cotton Casual Shirt '
     },
     {
