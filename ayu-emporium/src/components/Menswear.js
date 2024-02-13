@@ -8,9 +8,9 @@ const Menswear = () => {
     let [currentBanner, setBanner] = useState(0)
     useEffect(() => {
         document.title = 'Mens Wear - AyuEmporium'
-        // setInterval(() => {
-        //     changeBanner()
-        // }, 3000)
+        setInterval(() => {
+            changeBanner()
+        }, 3000)
     }, [])
     const changeBanner = () => {
         if (currentBanner === BANNER_URL.length - 1)
@@ -22,13 +22,8 @@ const Menswear = () => {
     return (
         <div className='flex flex-col items-center justify-center overflow-hidden'>
             <Header2 />
-            <div className=' flex transition-all duration-500 heroslider'>
+            <div className=' flex transition-all duration-500 '>
                 <img src={BANNER_URL[currentBanner]} alt='banner' className='w-screen h-[100vh]' />
-                <img src={BANNER_URL[1]} alt='banner' className='w-screen  h-[100vh]' />
-                <img src={BANNER_URL[2]} alt='banner' className='w-screen  h-[100vh]' />
-                <img src={BANNER_URL[3]} alt='banner' className='w-screen  h-[100vh]' />
-                <img src={BANNER_URL[4]} alt='banner' className='w-screen  h-[100vh]' />
-                <img src={BANNER_URL[5]} alt='banner' className='w-screen  h-[100vh]' />
 
             </div>
             <div className='flex gap-5 mt-24 flex-wrap justify-center '>
