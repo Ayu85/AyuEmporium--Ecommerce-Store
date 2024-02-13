@@ -95,7 +95,7 @@ const Header = () => {
 export const Header2 = () => {
     return <div className='w-full bg-[#1C161A] py-4 px-10 flex justify-between'>
         <div><h1 className='page_title text-3xl text-[#FFB71B]'>AyuEmporium</h1></div>
-        <div className='text-white     text-2xl flex gap-6 items-center'>
+        <div className='text-white  text-xl flex gap-6 items-center'>
             <div className='relative'>
                 <input type='text' className='w-[500px] py-2
                   outline-[#FFB71B] text-sm capitalize pl-9 text-slate-500'
