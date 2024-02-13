@@ -10,7 +10,7 @@ const Productdetails = () => {
     const [data, setData] = useState(false)
     useEffect(() => {
         setTimeout(() => {
-            setData(false)
+            setData(true)
         }, 3000)
     }, [])
     return data === false ? < Shimmer /> : (
