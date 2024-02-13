@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { Header2 } from './Header'
 import { useParams } from 'react-router-dom'
 import { menswear } from './utils/__mocks__'
+import { IoBagHandleOutline } from "react-icons/io5";
+import { IoMdHeartEmpty } from "react-icons/io";
+
 const Productdetails = () => {
     return (
         <div>
@@ -54,6 +57,10 @@ const Details = () => {
                     <h1 className='text-md cursor-pointer hover:text-white hover:bg-[#1C161A] hover:border-[#FFB71B] transition-all duration-200 font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>40</h1>
                     <h1 className='text-md cursor-pointer hover:text-white hover:bg-[#1C161A] hover:border-[#FFB71B] transition-all duration-200 font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>44</h1>
                     <h1 className='text-md cursor-pointer hover:text-white hover:bg-[#1C161A] hover:border-[#FFB71B] transition-all duration-200 font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>46</h1>
+                </div>
+                <div className='flex gap-10 pt-5'>
+                    <button className='flex items-center gap-4 text-md uppercase bg-[#1C161A] text-slate-50 px-9 py-3'><IoBagHandleOutline className='text-2xl' />Add To Bag</button>
+                    <button className='flex items-center gap-4 text-md uppercase border-[#1C161A] border  px-7 py-3'><IoMdHeartEmpty className='text-2xl text-red-600' />Wishlist</button>
                 </div>
             </div>
 
