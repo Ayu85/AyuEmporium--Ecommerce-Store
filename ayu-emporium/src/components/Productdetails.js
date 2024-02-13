@@ -29,10 +29,10 @@ const Details = () => {
     return <div className='flex flex-wrap px-5 pt-10'>
         <div className='flex w-[60%] flex-wrap gap-3'>
             {/* all 4 images */}
-            <div><img src={data?.display_images[0]} alt='logo' className='w-[420px]' /> </div>
-            <div><img src={data?.display_images[1]} alt='logo' className='w-[420px]' /> </div>
-            <div><img src={data?.display_images[2]} alt='logo' className='w-[420px]' /> </div>
-            <div><img src={data?.display_images[3]} alt='logo' className='w-[420px]' /> </div>
+            <div className='w-[420px] overflow-hidden cursor-pointer'><img src={data?.display_images[0]} alt='logo' className='w-[420px] hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
+            <div className='w-[420px] overflow-hidden cursor-pointer'><img src={data?.display_images[1]} alt='logo' className='w-[420px]  hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
+            <div className='w-[420px] overflow-hidden cursor-pointer'><img src={data?.display_images[2]} alt='logo' className='w-[420px]  hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
+            <div className='w-[420px] overflow-hidden cursor-pointer'><img src={data?.display_images[3]} alt='logo' className='w-[420px]  hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
         </div>
         <div className='w-[40%]'>
             {/* product details */}
