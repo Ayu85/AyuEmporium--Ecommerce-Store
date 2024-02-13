@@ -25,18 +25,23 @@ const Details = () => {
             return items.id == id
         })
     }
-    return <div className='flex px-5 pt-10'>
-        <div className='flex w-8/12 flex-wrap gap-3'>
+    return <div className='flex flex-wrap px-5 pt-10'>
+        <div className='flex w-[55%] flex-wrap gap-3'>
             {/* all 4 images */}
             <div><img src={data?.display_images[0]} alt='logo' className='w-96' /> </div>
             <div><img src={data?.display_images[1]} alt='logo' className='w-96' /> </div>
             <div><img src={data?.display_images[2]} alt='logo' className='w-96' /> </div>
             <div><img src={data?.display_images[3]} alt='logo' className='w-96' /> </div>
-
         </div>
-        <div>
+        <div className='w-[45%]'>
             {/* product details */}
-            details
+            <div className=' flex flex-col gap-1 border-b border-slate-300 pb-3'>
+                <h1 className='text-2xl font-bold text-[#282C3F] uppercase'>{data?.name}</h1>
+                <h1 className='text-[#757884] w-80 text-md font-sans line-clamp-2 '>{data?.about}</h1>
+                <h1 className=' from-black text-md  px-2 py-1 border mt-3 border-slate-300 w-44 text-center'>4.3⭐ | <span className='text-[#757884]'>8K+ Ratings</span></h1>
+
+            </div>
+
         </div>
     </div>
 }
