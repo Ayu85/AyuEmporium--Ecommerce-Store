@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { FiUser } from "react-icons/fi";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
+import { CiSearch } from "react-icons/ci";
 
 import { toogleCategories } from './redux/slices/showCategories'
 const Header = () => {
@@ -95,8 +96,12 @@ export const Header2 = () => {
     return <div className='w-full bg-[#1C161A] py-4 px-10 flex justify-between'>
         <div><h1 className='page_title text-3xl text-[#FFB71B]'>AyuEmporium</h1></div>
         <div className='text-white     text-2xl flex gap-6 items-center'>
-
-            <input type='text' className='w-[500px] py-2  outline-[#FFB71B] text-sm capitalize pl-3 text-slate-500' placeholder='search for  products brand and more' />
+            <div className='relative'>
+                <input type='text' className='w-[500px] py-2
+                  outline-[#FFB71B] text-sm capitalize pl-9 text-slate-500'
+                    placeholder='search for  products brand and more' />
+                <CiSearch  className='absolute left-2 top-2 text-slate-700 font-black'/>
+            </div>
             <div className='flex page_title flex-col items-center'><FiUser /><span className='text-sm'>Profile</span>
             </div>
             <div className='flex page_title flex-col items-center'><IoMdHeartEmpty /><span className='text-sm'>Wishlist</span>
