@@ -96,7 +96,7 @@ export const Header2 = () => {
         <div><h1 className='page_title text-3xl text-[#FFB71B]'>AyuEmporium</h1></div>
         <div className='text-white     text-2xl flex gap-6 items-center'>
 
-            <input type='text' className='w-[500px] py-3 text-sm capitalize pl-3 text-slate-500' placeholder='search for  products brand and more' />
+            <input type='text' className='w-[500px] py-2  outline-[#FFB71B] text-sm capitalize pl-3 text-slate-500' placeholder='search for  products brand and more' />
             <div className='flex page_title flex-col items-center'><FiUser /><span className='text-sm'>Profile</span>
             </div>
             <div className='flex page_title flex-col items-center'><IoMdHeartEmpty /><span className='text-sm'>Wishlist</span>
