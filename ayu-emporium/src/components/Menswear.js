@@ -20,10 +20,16 @@ const Menswear = () => {
     }
 
     return (
-        <div className='flex flex-col items-center justify-center'>
+        <div className='flex flex-col items-center justify-center overflow-hidden'>
             <Header2 />
-            <div className=' w-full flex justify-center transition-all duration-500'>
-                <img src={BANNER_URL[currentBanner]} alt='banner' className='w-full h-[100vh]' />
+            <div className=' flex transition-all duration-500 heroslider'>
+                <img src={BANNER_URL[currentBanner]} alt='banner' className='w-screen h-[100vh]' />
+                <img src={BANNER_URL[1]} alt='banner' className='w-screen  h-[100vh]' />
+                <img src={BANNER_URL[2]} alt='banner' className='w-screen  h-[100vh]' />
+                <img src={BANNER_URL[3]} alt='banner' className='w-screen  h-[100vh]' />
+                <img src={BANNER_URL[4]} alt='banner' className='w-screen  h-[100vh]' />
+                <img src={BANNER_URL[5]} alt='banner' className='w-screen  h-[100vh]' />
+
             </div>
             <div className='flex gap-5 mt-24 flex-wrap justify-center '>
                 {

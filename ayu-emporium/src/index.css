@@ -27,6 +27,7 @@ body {
   0% {
     transform: translateX(0px)
   }
+
   50% {
     transform: translateX(-1500px);
 
@@ -36,4 +37,24 @@ body {
     transform: translateX(0px);
 
   }
+}
+
+.heroslider {
+  animation: heroslide 40s infinite ease-in-out ;
+}
+
+@keyframes heroslide {
+  0% {
+    transform: translateX(0px)
+  }
+
+  50% {
+    transform: translateX(-2900px);
+
+  }
+  100% {
+    transform: translateX(0px);
+
+  }
+
 }
