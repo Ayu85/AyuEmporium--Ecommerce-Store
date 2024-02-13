@@ -7,6 +7,7 @@ const ProductCard = ({ name, price, discount, about, image }) => {
             <div className='relative'>
                 <img src={image} alt='logo' className='w-52' />
                 <h1 className='absolute bottom-2 left-3 bg-[#ffffffa2] text-xs font-black px-2 py-1'>4.3⭐ | 8K</h1>
+                <button className='absolute top-1/2 left-1/2 font-black text-lg'>View</button>
             </div>
             <div className='pl-1'>
                 <h1 className='text-[#282C3F] page_title font-semibold'>{name}</h1>
