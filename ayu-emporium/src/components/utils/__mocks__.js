@@ -77,21 +77,1322 @@ export const menswear = [
         price: 651,
         discount: '50% ',
         about: 'Mens Slim fit Casual Shirt For Every Occassion',
-        id: 1
+        display_images: ['https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8717979/2019/3/20/585db9fe-1df0-458d-b218-6f514eabb9601553068826233-Mast--Harbour-Men-Shirts-4141553068825026-1.jpg',
+            'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8717979/2019/3/20/f7dc2224-f493-4f38-b9a6-132b59913b581553068826213-Mast--Harbour-Men-Shirts-4141553068825026-2.jpg',
+            'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8717979/2019/3/20/50f88338-acaf-44d6-9a4b-50782f85e73d1553068826191-Mast--Harbour-Men-Shirts-4141553068825026-3.jpg',
+            'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8717979/2019/3/20/6f8ff989-9bb1-4517-8ab9-ae7328db015b1553068826166-Mast--Harbour-Men-Shirts-4141553068825026-4.jpg',
+        ],
+        id: 1,
+        details: {
+            "bestPrice": {
+                "couponType": "absolute",
+                "couponCode": "TOPBRANDOFFER",
+                "couponDiscount": " Rs. 163.0 off",
+                "couponAmount": 163,
+                "totalSavings": 1612,
+                "applicableOn": "Orders above Rs. 999 (only on first purchase)",
+                "message": "",
+                "price": {
+                    "mrp": 2099,
+                    "discounted": 487
+                },
+                "display": [
+                    {
+                        "label": "Applicable on:",
+                        "value": "Orders above Rs. 999 (only on first purchase)"
+                    },
+                    {
+                        "label": "Coupon code:",
+                        "value": "TOPBRANDOFFER"
+                    },
+                    {
+                        "label": "Coupon Discount:",
+                        "value": " Rs. 163 off (check cart for final savings)"
+                    }
+                ],
+                "couponPercentage": 0,
+                "minimum": 999,
+                "tagLink": "https://www.myntra.com/myntra?f=Coupons:TOPBRANDOFFER_113122",
+                "endTime": 1714501740000,
+                "isNewUserCoupon": true
+            },
+            "bestPriceList": [
+                {
+                    "couponType": "absolute",
+                    "couponCode": "TOPBRANDOFFER",
+                    "couponDiscount": " Rs. 163.0 off",
+                    "couponAmount": 163,
+                    "totalSavings": 1612,
+                    "applicableOn": "Orders above Rs. 999 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 2099,
+                        "discounted": 487
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 999 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "TOPBRANDOFFER"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 163 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 999,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:TOPBRANDOFFER_113122",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "TOPBRANDOFFER",
+                    "couponDiscount": " Rs. 152.0 off",
+                    "couponAmount": 152,
+                    "totalSavings": 1601,
+                    "applicableOn": "Orders above Rs. 1499 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 2099,
+                        "discounted": 498
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 1499 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "TOPBRANDOFFER"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 152 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 1499,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:TOPBRANDOFFER_113122",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "TOPBRANDOFFER",
+                    "couponDiscount": " Rs. 150.0 off",
+                    "couponAmount": 150,
+                    "totalSavings": 1599,
+                    "applicableOn": "Orders above Rs. 599 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 2099,
+                        "discounted": 500
+                    },
+                    "display": [
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 150 off (check cart for final savings)"
+                        },
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 599 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "TOPBRANDOFFER"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 599,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:TOPBRANDOFFER_113122",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA200",
+                    "couponDiscount": " Rs. 145.0 off",
+                    "couponAmount": 145,
+                    "totalSavings": 1594,
+                    "applicableOn": "Orders above Rs. 899 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 2099,
+                        "discounted": 505
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 899 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA200"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 145 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 899,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA200",
+                    "couponDiscount": " Rs. 145.0 off",
+                    "couponAmount": 145,
+                    "totalSavings": 1594,
+                    "applicableOn": "Orders above Rs. 899 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 2099,
+                        "discounted": 505
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 899 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA200"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 145 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 899,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA300",
+                    "couponDiscount": " Rs. 139.0 off",
+                    "couponAmount": 139,
+                    "totalSavings": 1588,
+                    "applicableOn": "Orders above Rs. 1399 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 2099,
+                        "discounted": 511
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 1399 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA300"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 139 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 1399,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA100",
+                    "couponDiscount": " Rs. 100.0 off",
+                    "couponAmount": 100,
+                    "totalSavings": 1549,
+                    "applicableOn": "Orders above Rs. 499 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 2099,
+                        "discounted": 550
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 499 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA100"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 100 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 499,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "percentage",
+                    "couponCode": "HELLO2024",
+                    "couponDiscount": " 10.0%  off",
+                    "couponAmount": 0,
+                    "totalSavings": 1514,
+                    "applicableOn": "Only on first purchase",
+                    "message": "",
+                    "price": {
+                        "mrp": 2099,
+                        "discounted": 585
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Only on first purchase"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "HELLO2024"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " 10%  off (Your total saving: Rs. 1514)"
+                        }
+                    ],
+                    "couponPercentage": 10,
+                    "minimum": 0,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1735717960000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "percentage",
+                    "couponCode": "MUSTGRAB5",
+                    "couponDiscount": " 5.0%  off",
+                    "couponAmount": 0,
+                    "totalSavings": 1482,
+                    "applicableOn": "Only on first purchase",
+                    "message": "",
+                    "price": {
+                        "mrp": 2099,
+                        "discounted": 617
+                    },
+                    "display": [
+                        {
+                            "label": "Coupon code:",
+                            "value": "MUSTGRAB5"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " 5%  off (Your total saving: Rs. 1482)"
+                        },
+                        {
+                            "label": "Applicable on:",
+                            "value": "Only on first purchase"
+                        }
+                    ],
+                    "couponPercentage": 5,
+                    "minimum": 0,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:MUSTGRAB5_115256",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                }
+            ],
+            "offers": []
+        }
     },
     {
         image: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg',
         name: 'Roadster',
         price: 951,
         discount: '60% ', id: 2,
-        about: 'Mens Pure Cotton Casual Shirt '
+        about: 'Mens Pure Cotton Casual Shirt ',
+        display_images: ['https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9680385/2019/8/19/9a71effc-5ca8-4f56-94c0-2c71054102101566218377789-Roadster-Men-Shirts-8021566218376333-1.jpg',
+            'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9680385/2019/8/19/5fa23b98-07bc-4bb0-aed8-ca2f84b22a8f1566218377733-Roadster-Men-Shirts-8021566218376333-4.jpg',
+            'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9680385/2019/8/19/7b039a76-2a6f-4988-8d3b-3596d2452dd81566218377770-Roadster-Men-Shirts-8021566218376333-2.jpg',
+            'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9680385/2019/8/19/148c55fd-327b-44a6-9843-9e8470e121661566218377751-Roadster-Men-Shirts-8021566218376333-3.jpg'],
+        details:
+        {
+            "bestPrice": {
+                "couponType": "absolute",
+                "couponCode": "TOPBRANDOFFER",
+                "couponDiscount": " Rs. 172.0 off",
+                "couponAmount": 172,
+                "totalSavings": 783,
+                "applicableOn": "Orders above Rs. 999 (only on first purchase)",
+                "message": "",
+                "price": {
+                    "mrp": 1299,
+                    "discounted": 516
+                },
+                "display": [
+                    {
+                        "label": "Applicable on:",
+                        "value": "Orders above Rs. 999 (only on first purchase)"
+                    },
+                    {
+                        "label": "Coupon code:",
+                        "value": "TOPBRANDOFFER"
+                    },
+                    {
+                        "label": "Coupon Discount:",
+                        "value": " Rs. 172 off (check cart for final savings)"
+                    }
+                ],
+                "couponPercentage": 0,
+                "minimum": 999,
+                "tagLink": "https://www.myntra.com/myntra?f=Coupons:TOPBRANDOFFER_113122",
+                "endTime": 1714501740000,
+                "isNewUserCoupon": true
+            },
+            "bestPriceList": [
+                {
+                    "couponType": "absolute",
+                    "couponCode": "TOPBRANDOFFER",
+                    "couponDiscount": " Rs. 172.0 off",
+                    "couponAmount": 172,
+                    "totalSavings": 783,
+                    "applicableOn": "Orders above Rs. 999 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1299,
+                        "discounted": 516
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 999 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "TOPBRANDOFFER"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 172 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 999,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:TOPBRANDOFFER_113122",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "TOPBRANDOFFER",
+                    "couponDiscount": " Rs. 161.0 off",
+                    "couponAmount": 161,
+                    "totalSavings": 772,
+                    "applicableOn": "Orders above Rs. 1499 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1299,
+                        "discounted": 527
+                    },
+                    "display": [
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 161 off (check cart for final savings)"
+                        },
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 1499 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "TOPBRANDOFFER"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 1499,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:TOPBRANDOFFER_113122",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA200",
+                    "couponDiscount": " Rs. 153.0 off",
+                    "couponAmount": 153,
+                    "totalSavings": 764,
+                    "applicableOn": "Orders above Rs. 899 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1299,
+                        "discounted": 535
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 899 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA200"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 153 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 899,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA200",
+                    "couponDiscount": " Rs. 153.0 off",
+                    "couponAmount": 153,
+                    "totalSavings": 764,
+                    "applicableOn": "Orders above Rs. 899 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1299,
+                        "discounted": 535
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 899 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA200"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 153 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 899,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "TOPBRANDOFFER",
+                    "couponDiscount": " Rs. 150.0 off",
+                    "couponAmount": 150,
+                    "totalSavings": 761,
+                    "applicableOn": "Orders above Rs. 599 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1299,
+                        "discounted": 538
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 599 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "TOPBRANDOFFER"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 150 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 599,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:TOPBRANDOFFER_113122",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA300",
+                    "couponDiscount": " Rs. 148.0 off",
+                    "couponAmount": 148,
+                    "totalSavings": 759,
+                    "applicableOn": "Orders above Rs. 1399 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1299,
+                        "discounted": 540
+                    },
+                    "display": [
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA300"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 148 off (check cart for final savings)"
+                        },
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 1399 (only on first purchase)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 1399,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA100",
+                    "couponDiscount": " Rs. 100.0 off",
+                    "couponAmount": 100,
+                    "totalSavings": 711,
+                    "applicableOn": "Orders above Rs. 499 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1299,
+                        "discounted": 588
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 499 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA100"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 100 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 499,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "dual",
+                    "couponCode": "MENNEW",
+                    "couponDiscount": " 14.0%  off upto Rs. 300.0",
+                    "couponAmount": 300,
+                    "totalSavings": 708,
+                    "applicableOn": "Orders above Rs. 1699 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1299,
+                        "discounted": 591
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 1699 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MENNEW"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " 14%  off upto Rs. 300 (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 14,
+                    "minimum": 1699,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:MENNEW",
+                    "endTime": 1714500000000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "dual",
+                    "couponCode": "MFBNEW",
+                    "couponDiscount": " 14.0%  off upto Rs. 300.0",
+                    "couponAmount": 300,
+                    "totalSavings": 708,
+                    "applicableOn": "Orders above Rs. 1699 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1299,
+                        "discounted": 591
+                    },
+                    "display": [
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " 14%  off upto Rs. 300 (check cart for final savings)"
+                        },
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 1699 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MFBNEW"
+                        }
+                    ],
+                    "couponPercentage": 14,
+                    "minimum": 1699,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:MFBNEW",
+                    "endTime": 1714500000000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "dual",
+                    "couponCode": "ADDEXTRA",
+                    "couponDiscount": " 10.0%  off upto Rs. 300.0",
+                    "couponAmount": 300,
+                    "totalSavings": 680,
+                    "applicableOn": "Orders above Rs. 1299 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1299,
+                        "discounted": 619
+                    },
+                    "display": [
+                        {
+                            "label": "Coupon code:",
+                            "value": "ADDEXTRA"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " 10%  off upto Rs. 300 (check cart for final savings)"
+                        },
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 1299 (only on first purchase)"
+                        }
+                    ],
+                    "couponPercentage": 10,
+                    "minimum": 1299,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:ADDEXTRA",
+                    "endTime": 1714500000000,
+                    "isNewUserCoupon": true
+                }
+            ],
+            "offers": [
+                {
+                    "text": "Get additional offer",
+                    "description": "Unlock additional 10% off upto ₹250 on this style by buying from a selected catalogue.",
+                    "link": "https://www.myntra.com/myntra?f=Coupons:AP_EXTRASHIRTS_BASE"
+                }
+            ]
+        }
+    },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/27283502/2024/2/1/cd4d9c12-b659-4d61-8768-3af4ee470efa1706796424108PowerlookMenTartanChecksOpaqueCheckedCasualShirt1.jpg",
+        "name": "Slim Fit Chambray Shirt",
+        "about": "Add a touch of sophistication to your look with this slim fit chambray shirt. Its sleek design and versatile style make it a wardrobe essential.",
+        "discount": "15%",
+        id: 6,
+        "price": "$54.99",
+        display_images: ['https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/27283502/2024/2/1/cd4d9c12-b659-4d61-8768-3af4ee470efa1706796424108PowerlookMenTartanChecksOpaqueCheckedCasualShirt1.jpg',
+            'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/27283502/2024/2/1/dd3f9ddb-964c-4c23-98ce-2b90767351f91706796424091PowerlookMenTartanChecksOpaqueCheckedCasualShirt2.jpg',
+            'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/27283502/2024/2/1/4ddd5aa3-5991-4f83-9328-10bdc797fe571706796424124PowerlookMenTartanChecksOpaqueCheckedCasualShirt3.jpg',
+            'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/27283502/2024/2/1/3067aad9-9122-46fa-b54c-dc12392f93541706796424113PowerlookMenTartanChecksOpaqueCheckedCasualShirt4.jpg'
+        ],
+        details: {
+            "bestPrice": {
+                "couponType": "absolute",
+                "couponCode": "MYNTRA300",
+                "couponDiscount": " Rs. 243.0 off",
+                "couponAmount": 243,
+                "totalSavings": 707,
+                "applicableOn": "Orders above Rs. 1399 (only on first purchase)",
+                "message": "",
+                "price": {
+                    "mrp": 1599,
+                    "discounted": 892
+                },
+                "display": [
+                    {
+                        "label": "Applicable on:",
+                        "value": "Orders above Rs. 1399 (only on first purchase)"
+                    },
+                    {
+                        "label": "Coupon code:",
+                        "value": "MYNTRA300"
+                    },
+                    {
+                        "label": "Coupon Discount:",
+                        "value": " Rs. 243 off (check cart for final savings)"
+                    }
+                ],
+                "couponPercentage": 0,
+                "minimum": 1399,
+                "tagLink": "https://www.myntra.com/online-fashion-store",
+                "endTime": 1714501740000,
+                "isNewUserCoupon": true
+            },
+            "bestPriceList": [
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA300",
+                    "couponDiscount": " Rs. 243.0 off",
+                    "couponAmount": 243,
+                    "totalSavings": 707,
+                    "applicableOn": "Orders above Rs. 1399 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1599,
+                        "discounted": 892
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 1399 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA300"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 243 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 1399,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA200",
+                    "couponDiscount": " Rs. 200.0 off",
+                    "couponAmount": 200,
+                    "totalSavings": 664,
+                    "applicableOn": "Orders above Rs. 899 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1599,
+                        "discounted": 935
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 899 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA200"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 200 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 899,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA200",
+                    "couponDiscount": " Rs. 200.0 off",
+                    "couponAmount": 200,
+                    "totalSavings": 664,
+                    "applicableOn": "Orders above Rs. 899 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1599,
+                        "discounted": 935
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 899 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA200"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 200 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 899,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "percentage",
+                    "couponCode": "HELLO2024",
+                    "couponDiscount": " 10.0%  off",
+                    "couponAmount": 0,
+                    "totalSavings": 578,
+                    "applicableOn": "Only on first purchase",
+                    "message": "",
+                    "price": {
+                        "mrp": 1599,
+                        "discounted": 1021
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Only on first purchase"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "HELLO2024"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " 10%  off (Your total saving: Rs. 578)"
+                        }
+                    ],
+                    "couponPercentage": 10,
+                    "minimum": 0,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1735717960000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA100",
+                    "couponDiscount": " Rs. 100.0 off",
+                    "couponAmount": 100,
+                    "totalSavings": 564,
+                    "applicableOn": "Orders above Rs. 499 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1599,
+                        "discounted": 1035
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 499 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA100"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 100 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 499,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "percentage",
+                    "couponCode": "MUSTGRAB5",
+                    "couponDiscount": " 5.0%  off",
+                    "couponAmount": 0,
+                    "totalSavings": 521,
+                    "applicableOn": "Only on first purchase",
+                    "message": "",
+                    "price": {
+                        "mrp": 1599,
+                        "discounted": 1078
+                    },
+                    "display": [
+                        {
+                            "label": "Coupon code:",
+                            "value": "MUSTGRAB5"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " 5%  off (Your total saving: Rs. 521)"
+                        },
+                        {
+                            "label": "Applicable on:",
+                            "value": "Only on first purchase"
+                        }
+                    ],
+                    "couponPercentage": 5,
+                    "minimum": 0,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:MUSTGRAB5_115256",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                }
+            ],
+            "offers": []
+        }
     },
     {
         image: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg',
         name: 'HERE&NOW',
         price: 699,
         discount: '40% ', id: 3,
-        about: 'Slim Fit Casual Shirt '
+        about: 'Slim Fit Casual Shirt ',
+        display_images: ['https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg',
+            'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/380dfa31-097e-435a-bebb-b9e887be1e841662468109153Shirts2.jpg',
+            'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/d7acbf47-6e27-4e70-8224-a3abc8be4fc51662468109171Shirts3.jpg',
+            'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/86a0089f-1615-41a2-b07f-86ea7e6bfd0d1662468109178Shirts4.jpg'],
+        details: {
+            "bestPrice": {
+                "couponType": "absolute",
+                "couponCode": "TOPBRANDOFFER",
+                "couponDiscount": " Rs. 150.0 off",
+                "couponAmount": 150,
+                "totalSavings": 1450,
+                "applicableOn": "Orders above Rs. 599 (only on first purchase)",
+                "message": "",
+                "price": {
+                    "mrp": 1899,
+                    "discounted": 449
+                },
+                "display": [
+                    {
+                        "label": "Coupon code:",
+                        "value": "TOPBRANDOFFER"
+                    },
+                    {
+                        "label": "Coupon Discount:",
+                        "value": " Rs. 150 off (check cart for final savings)"
+                    },
+                    {
+                        "label": "Applicable on:",
+                        "value": "Orders above Rs. 599 (only on first purchase)"
+                    }
+                ],
+                "couponPercentage": 0,
+                "minimum": 599,
+                "tagLink": "https://www.myntra.com/myntra?f=Coupons:TOPBRANDOFFER_113122",
+                "endTime": 1714501740000,
+                "isNewUserCoupon": true
+            },
+            "bestPriceList": [
+                {
+                    "couponType": "absolute",
+                    "couponCode": "TOPBRANDOFFER",
+                    "couponDiscount": " Rs. 150.0 off",
+                    "couponAmount": 150,
+                    "totalSavings": 1450,
+                    "applicableOn": "Orders above Rs. 599 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1899,
+                        "discounted": 449
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 599 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "TOPBRANDOFFER"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 150 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 599,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:TOPBRANDOFFER_113122",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "TOPBRANDOFFER",
+                    "couponDiscount": " Rs. 150.0 off",
+                    "couponAmount": 150,
+                    "totalSavings": 1450,
+                    "applicableOn": "Orders above Rs. 999 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1899,
+                        "discounted": 449
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 999 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "TOPBRANDOFFER"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 150 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 999,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:TOPBRANDOFFER_113122",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "TOPBRANDOFFER",
+                    "couponDiscount": " Rs. 140.0 off",
+                    "couponAmount": 140,
+                    "totalSavings": 1440,
+                    "applicableOn": "Orders above Rs. 1499 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1899,
+                        "discounted": 459
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 1499 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "TOPBRANDOFFER"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 140 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 1499,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:TOPBRANDOFFER_113122",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA200",
+                    "couponDiscount": " Rs. 133.0 off",
+                    "couponAmount": 133,
+                    "totalSavings": 1433,
+                    "applicableOn": "Orders above Rs. 899 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1899,
+                        "discounted": 466
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 899 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA200"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 133 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 899,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA200",
+                    "couponDiscount": " Rs. 133.0 off",
+                    "couponAmount": 133,
+                    "totalSavings": 1433,
+                    "applicableOn": "Orders above Rs. 899 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1899,
+                        "discounted": 466
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 899 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA200"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 133 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 899,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA300",
+                    "couponDiscount": " Rs. 128.0 off",
+                    "couponAmount": 128,
+                    "totalSavings": 1428,
+                    "applicableOn": "Orders above Rs. 1399 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1899,
+                        "discounted": 471
+                    },
+                    "display": [
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA300"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 128 off (check cart for final savings)"
+                        },
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 1399 (only on first purchase)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 1399,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "absolute",
+                    "couponCode": "MYNTRA100",
+                    "couponDiscount": " Rs. 100.0 off",
+                    "couponAmount": 100,
+                    "totalSavings": 1400,
+                    "applicableOn": "Orders above Rs. 499 (only on first purchase)",
+                    "message": "",
+                    "price": {
+                        "mrp": 1899,
+                        "discounted": 499
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Orders above Rs. 499 (only on first purchase)"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MYNTRA100"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " Rs. 100 off (check cart for final savings)"
+                        }
+                    ],
+                    "couponPercentage": 0,
+                    "minimum": 499,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "percentage",
+                    "couponCode": "HELLO2024",
+                    "couponDiscount": " 10.0%  off",
+                    "couponAmount": 0,
+                    "totalSavings": 1360,
+                    "applicableOn": "Only on first purchase",
+                    "message": "",
+                    "price": {
+                        "mrp": 1899,
+                        "discounted": 539
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Only on first purchase"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "HELLO2024"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " 10%  off (Your total saving: Rs. 1360)"
+                        }
+                    ],
+                    "couponPercentage": 10,
+                    "minimum": 0,
+                    "tagLink": "https://www.myntra.com/online-fashion-store",
+                    "endTime": 1735717960000,
+                    "isNewUserCoupon": true
+                },
+                {
+                    "couponType": "percentage",
+                    "couponCode": "HERE\u0026NOWBMGM",
+                    "couponDiscount": " 5.0%  off",
+                    "couponAmount": 0,
+                    "totalSavings": 1330,
+                    "applicableOn": "Purchase of 2 or more items",
+                    "message": "",
+                    "price": {
+                        "mrp": 1899,
+                        "discounted": 569
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Purchase of 2 or more items"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "HERE\u0026NOWBMGM"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " 5%  off (Your total saving: Rs. 1330)"
+                        }
+                    ],
+                    "couponPercentage": 5,
+                    "minimum": 0,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:HERE\u0026NOWBMGM_110740",
+                    "endTime": 1711908000000,
+                    "isNewUserCoupon": false
+                },
+                {
+                    "couponType": "percentage",
+                    "couponCode": "MUSTGRAB5",
+                    "couponDiscount": " 5.0%  off",
+                    "couponAmount": 0,
+                    "totalSavings": 1330,
+                    "applicableOn": "Only on first purchase",
+                    "message": "",
+                    "price": {
+                        "mrp": 1899,
+                        "discounted": 569
+                    },
+                    "display": [
+                        {
+                            "label": "Applicable on:",
+                            "value": "Only on first purchase"
+                        },
+                        {
+                            "label": "Coupon code:",
+                            "value": "MUSTGRAB5"
+                        },
+                        {
+                            "label": "Coupon Discount:",
+                            "value": " 5%  off (Your total saving: Rs. 1330)"
+                        }
+                    ],
+                    "couponPercentage": 5,
+                    "minimum": 0,
+                    "tagLink": "https://www.myntra.com/myntra?f=Coupons:MUSTGRAB5_115256",
+                    "endTime": 1714501740000,
+                    "isNewUserCoupon": true
+                }
+            ],
+            "offers": []
+        }
     },
     {
         image: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg',
@@ -99,20 +1400,15 @@ export const menswear = [
         price: 951,
         discount: '60% ', id: 4,
         about: 'Mens Pure Cotton Casual Shirt '
-    }, {
+    },
+    {
         "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9680385/2019/8/19/9a71effc-5ca8-4f56-94c0-2c71054102101566218377789-Roadster-Men-Shirts-8021566218376333-1.jpg",
         "name": "Classic Oxford Shirt",
         "about": "Elevate your wardrobe with this timeless Oxford shirt. Crafted from premium cotton, it offers comfort and style for any occasion.",
         "discount": "10%", id: 5,
         "price": "$49.99"
     },
-    {
-        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/27283502/2024/2/1/cd4d9c12-b659-4d61-8768-3af4ee470efa1706796424108PowerlookMenTartanChecksOpaqueCheckedCasualShirt1.jpg",
-        "name": "Slim Fit Chambray Shirt",
-        "about": "Add a touch of sophistication to your look with this slim fit chambray shirt. Its sleek design and versatile style make it a wardrobe essential.",
-        "discount": "15%", id: 6,
-        "price": "$54.99"
-    },
+
     {
         "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/6714923/2019/3/6/343e1235-336c-401e-beab-afbb828448231551863812172-Dennis-Lingo-Men-Black-Slim-Fit-Solid-Casual-Shirt-473155186-1.jpg",
         "name": "Plaid Flannel Shirt",
