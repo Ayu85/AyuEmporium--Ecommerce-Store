@@ -3,6 +3,10 @@ import { FaUserCircle } from "react-icons/fa";
 import { ImCart } from "react-icons/im";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { useDispatch, useSelector } from 'react-redux'
+import { FiUser } from "react-icons/fi";
+import { IoBagHandleOutline } from "react-icons/io5";
+import { IoMdHeartEmpty } from "react-icons/io";
+
 import { toogleCategories } from './redux/slices/showCategories'
 const Header = () => {
     const [isScrolled, setScrolled] = useState(false)
@@ -86,9 +90,19 @@ const Header = () => {
         </div>
     )
 }
+
 export const Header2 = () => {
-    return <div className='w-full bg-[#1C161A] py-4 px-10'>
+    return <div className='w-full bg-[#1C161A] py-4 px-10 flex justify-between'>
         <div><h1 className='page_title text-3xl text-[#FFB71B]'>AyuEmporium</h1></div>
+        <div className='text-white page_title    text-2xl flex gap-6 items-center'>
+            <div className='flex flex-col items-center'><FiUser /><span className='text-sm'>Profile</span>
+            </div>
+            <div className='flex flex-col items-center'><IoMdHeartEmpty /><span className='text-sm'>Wishlist</span>
+            </div>
+            <div className='flex flex-col items-center'><IoBagHandleOutline /><span className='text-sm'>Bag</span>
+            </div>
+
+        </div>
     </div>
 }
 
