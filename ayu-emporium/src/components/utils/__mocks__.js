@@ -76,47 +76,48 @@ export const menswear = [
         name: 'Mast and Harbour',
         price: 651,
         discount: '50% ',
-        about: 'Mens Slim fit Casual Shirt For Every Occassion'
+        about: 'Mens Slim fit Casual Shirt For Every Occassion',
+        id: 1
     },
     {
         image: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg',
         name: 'Roadster',
         price: 951,
-        discount: '60% ',
+        discount: '60% ', id: 2,
         about: 'Mens Pure Cotton Casual Shirt '
     },
     {
         image: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg',
         name: 'HERE&NOW',
         price: 699,
-        discount: '40% ',
+        discount: '40% ', id: 3,
         about: 'Slim Fit Casual Shirt '
     },
     {
         image: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg',
         name: 'Roadster',
         price: 951,
-        discount: '60% ',
+        discount: '60% ', id: 4,
         about: 'Mens Pure Cotton Casual Shirt '
     }, {
         "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9680385/2019/8/19/9a71effc-5ca8-4f56-94c0-2c71054102101566218377789-Roadster-Men-Shirts-8021566218376333-1.jpg",
         "name": "Classic Oxford Shirt",
         "about": "Elevate your wardrobe with this timeless Oxford shirt. Crafted from premium cotton, it offers comfort and style for any occasion.",
-        "discount": "10%",
+        "discount": "10%", id: 5,
         "price": "$49.99"
     },
     {
         "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/27283502/2024/2/1/cd4d9c12-b659-4d61-8768-3af4ee470efa1706796424108PowerlookMenTartanChecksOpaqueCheckedCasualShirt1.jpg",
         "name": "Slim Fit Chambray Shirt",
         "about": "Add a touch of sophistication to your look with this slim fit chambray shirt. Its sleek design and versatile style make it a wardrobe essential.",
-        "discount": "15%",
+        "discount": "15%", id: 6,
         "price": "$54.99"
     },
     {
         "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/6714923/2019/3/6/343e1235-336c-401e-beab-afbb828448231551863812172-Dennis-Lingo-Men-Black-Slim-Fit-Solid-Casual-Shirt-473155186-1.jpg",
         "name": "Plaid Flannel Shirt",
         "about": "Stay cozy and stylish in this classic plaid flannel shirt. Made from soft, brushed cotton, it's perfect for layering on chilly days.",
-        "discount": "20%",
+        "discount": "20%", id: 7,
         "price": "$39.99"
     },
     {
