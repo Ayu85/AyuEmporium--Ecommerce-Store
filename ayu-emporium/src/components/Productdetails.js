@@ -5,6 +5,7 @@ const Productdetails = () => {
     return (
         <div>
             <Header2 />
+          
         </div>
     )
 }

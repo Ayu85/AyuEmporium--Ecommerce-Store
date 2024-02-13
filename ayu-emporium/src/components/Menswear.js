@@ -4,6 +4,7 @@ import Header, { Header2 } from './Header'
 import { menswear } from './utils/__mocks__'
 import ProductCard from './ProductCard,'
 import { BANNER_URL } from './utils/constants'
+import { Link } from 'react-router-dom'
 const Menswear = () => {
     let [currentBanner, setBanner] = useState(0)
     useEffect(() => {
@@ -29,7 +30,7 @@ const Menswear = () => {
             <div className='flex gap-5 mt-24 flex-wrap justify-center '>
                 {
                     menswear.map((product, keys) => {
-                        return <ProductCard {...product} />
+                        return <Link to={`/details/${product.id}`}><ProductCard {...product} /></Link>
                     })
                 }
             </div>
