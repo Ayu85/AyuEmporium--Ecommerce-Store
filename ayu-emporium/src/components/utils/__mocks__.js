@@ -49,4 +49,14 @@ export const categories = [
         name: 'Home Decor',
         discount: '30-60% OFF'
     },
+    {
+        logo: 'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/25040590/2023/9/18/44b789d6-eaf2-4a4a-b0b0-1dc0b4e8c8531695015854880MenInBlackLuxuryPerfumeandWatchGiftSetForMen1.jpg',
+        name: 'Watches',
+        discount: '40-80% OFF'
+    },
+    {
+        logo: 'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/23484790/2023/5/31/14fc49d0-6ce3-4410-9e8c-147f57c539d91685518426707HRXbyHrithikRoshanMenWhiteMeshRunningNon-MarkingShoes1.jpg',
+        name: 'Mens Footwear',
+        discount: '40-80% OFF'
+    },
 ]
