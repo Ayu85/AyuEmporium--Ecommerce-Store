@@ -1,14 +1,21 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Header2 } from './Header'
 import { useParams } from 'react-router-dom'
-
+import { menswear } from './utils/__mocks__'
 const Productdetails = () => {
-    
+    const prodId = useParams()
+    const [id] = useState(prodId.id)
+    const [data, setData] = useState(null)
     useEffect(() => {
-      
+        const d = filterData(menswear)
+        setData(d)
     }, [])
-    const id = useParams()
-    console.log(id);
+    const filterData = (mock) => {
+        return menswear.filter((items) => {
+            return items.id == id
+        })
+    }
+   
     return (
         <div>
             <Header2 />
