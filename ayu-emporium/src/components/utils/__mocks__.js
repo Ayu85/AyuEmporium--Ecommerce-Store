@@ -98,5 +98,39 @@ export const menswear = [
         price: 951,
         discount: '60% OFF',
         about: 'Mens Pure Cotton Casual Shirt '
+    }, {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9680385/2019/8/19/9a71effc-5ca8-4f56-94c0-2c71054102101566218377789-Roadster-Men-Shirts-8021566218376333-1.jpg",
+        "name": "Classic Oxford Shirt",
+        "about": "Elevate your wardrobe with this timeless Oxford shirt. Crafted from premium cotton, it offers comfort and style for any occasion.",
+        "discount": "10%",
+        "price": "$49.99"
+    },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/27283502/2024/2/1/cd4d9c12-b659-4d61-8768-3af4ee470efa1706796424108PowerlookMenTartanChecksOpaqueCheckedCasualShirt1.jpg",
+        "name": "Slim Fit Chambray Shirt",
+        "about": "Add a touch of sophistication to your look with this slim fit chambray shirt. Its sleek design and versatile style make it a wardrobe essential.",
+        "discount": "15%",
+        "price": "$54.99"
+    },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/6714923/2019/3/6/343e1235-336c-401e-beab-afbb828448231551863812172-Dennis-Lingo-Men-Black-Slim-Fit-Solid-Casual-Shirt-473155186-1.jpg",
+        "name": "Plaid Flannel Shirt",
+        "about": "Stay cozy and stylish in this classic plaid flannel shirt. Made from soft, brushed cotton, it's perfect for layering on chilly days.",
+        "discount": "20%",
+        "price": "$39.99"
+    },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/20421124/2022/10/17/2dd1cc94-8bed-4f0f-8c95-a785a9910a3c1665981279300HERENOWMenMulticolouredSlimFitPrintedCasualShirt1.jpg",
+        "name": "Striped Linen Shirt",
+        "about": "Embrace laid-back elegance with this lightweight linen shirt. Its breathable fabric and relaxed fit make it ideal for warm-weather days.",
+        "discount": "10%",
+        "price": "$44.99"
+    },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11326686/2020/2/24/ea16898e-7a72-4989-9699-16c16d6f76591582542303146-Roadster-Men-Shirts-6021582542301356-1.jpg",
+        "name": "Denim Button-Up Shirt",
+        "about": "Achieve a rugged yet refined look with this denim button-up shirt. Its durable construction and classic design ensure lasting style.",
+        "discount": "25%",
+        "price": "$59.99"
     },
 ]
