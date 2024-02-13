@@ -1,1 +1,1 @@
-export const BANNER_URL='https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png'
+export const BANNER_URL='https://img.freepik.com/free-photo/big-sale-discounts-products_23-2150336701.jpg?w=996&t=st=1707809948~exp=1707810548~hmac=56611f272c802c1f9c5df6dcaf3ced0107421dc5e3428cd805b18c16e420de5a'

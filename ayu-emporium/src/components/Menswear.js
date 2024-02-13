@@ -9,12 +9,12 @@ const Menswear = () => {
         document.title = 'Mens Wear - AyuEmporium'
     }, [])
     return (
-        <div className='flex flex-col gap-10 items-center justify-center'>
+        <div className='flex flex-col items-center justify-center'>
             <Header2 />
-            <div className='bg-[#6599FF] w-full flex justify-center'>
-                <img src={BANNER_URL} alt='banner' className='900px' />
+            <div className=' w-full flex justify-center '>
+                <img src={BANNER_URL} alt='banner' className='w-full h-[90vh]' />
             </div>
-            <div className='flex gap-5 flex-wrap justify-center '>
+            <div className='flex gap-5 mt-24 flex-wrap justify-center '>
                 {
                     menswear.map((product, keys) => {
                         return <ProductCard {...product} />
