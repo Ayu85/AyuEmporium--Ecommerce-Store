@@ -10,7 +10,7 @@ const Menswear = () => {
     return (
         <div className='flex flex-col items-center justify-center'>
             <Header2 />
-            <div className='flex gap-5 flex-wrap justify-center flex-wrap'>
+            <div className='flex gap-5 flex-wrap justify-center '>
                 {
                     menswear.map((product, keys) => {
                         return <ProductCard {...product} />
