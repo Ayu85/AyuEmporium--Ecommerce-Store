@@ -5,7 +5,7 @@ import { HiMiniViewfinderCircle } from "react-icons/hi2";
 
 const ProductCard = ({ name, price, discount, about, image }) => {
     return (
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 100 }} transition={{ duration: 1.5, ease: 'easeIn' }} className='w-52 flex flex-col'>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 100 }} transition={{ duration: 1, ease: 'easeIn' }} className='w-52 flex flex-col'>
             <div className='relative group overflow-hidden'>
                 <img src={image} alt='logo' className='w-52  cursor-pointer saturate-200 filter hover:brightness-50' />
                 <h1 className='absolute bottom-2 left-3 bg-[#ffffffa2] text-xs font-black px-2 py-1'>4.3⭐ | 8K</h1>
