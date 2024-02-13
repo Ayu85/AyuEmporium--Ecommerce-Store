@@ -75,28 +75,28 @@ export const menswear = [
         image: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/8717979/2019/3/20/585db9fe-1df0-458d-b218-6f514eabb9601553068826233-Mast--Harbour-Men-Shirts-4141553068825026-1.jpg',
         name: 'Mast and Harbour',
         price: 651,
-        discount: '50% OFF',
+        discount: '50% ',
         about: 'Mens Slim fit Casual Shirt For Every Occassion'
     },
     {
         image: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg',
         name: 'Roadster',
         price: 951,
-        discount: '60% OFF',
+        discount: '60% ',
         about: 'Mens Pure Cotton Casual Shirt '
     },
     {
         image: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg',
         name: 'HERE&NOW',
         price: 699,
-        discount: '40% OFF',
+        discount: '40% ',
         about: 'Slim Fit Casual Shirt '
     },
     {
         image: 'https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg',
         name: 'Roadster',
         price: 951,
-        discount: '60% OFF',
+        discount: '60% ',
         about: 'Mens Pure Cotton Casual Shirt '
     }, {
         "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9680385/2019/8/19/9a71effc-5ca8-4f56-94c0-2c71054102101566218377789-Roadster-Men-Shirts-8021566218376333-1.jpg",
