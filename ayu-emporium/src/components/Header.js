@@ -86,5 +86,10 @@ const Header = () => {
         </div>
     )
 }
+export const Header2 = () => {
+    return <div className='w-full bg-[#1C161A] py-4 px-10'>
+        <div><h1 className='page_title text-3xl text-[#FFB71B]'>AyuEmporium</h1></div>
+    </div>
+}
 
 export default Header
