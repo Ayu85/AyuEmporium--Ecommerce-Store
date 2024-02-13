@@ -94,6 +94,7 @@ const Header = () => {
 
 export const Header2 = () => {
     const [showProfile, setShowProfile] = useState(false)
+    const [showDropdown, setDropdown] = useState(false)
     return <div className='w-full bg-[#1C161A] py-4 px-10 flex justify-between'>
         <div><h1 className='page_title text-3xl text-[#FFB71B]'>AyuEmporium</h1></div>
         <div className='text-white hidden lg:flex text-xl  gap-6 items-center '>
@@ -105,18 +106,25 @@ export const Header2 = () => {
             </div>
             <div onMouseEnter={() => {
                 setShowProfile(true)
+                setDropdown(true)
             }} onMouseLeave={() => {
                 setShowProfile(false)
+                setDropdown(false)
+
             }} className='flex page_title flex-col items-center relative cursor-pointer hover:text-[#ffb71b]'>
                 <FiUser /><span className='text-sm'>Profile</span>
             </div>
-            <div className={`w-80 bg-white h-[300px] px-5 py-2 absolute transition-all duration-150 top-14 right-11 z-[99999] ${1 ? "opacity-100 " : "opacity-0"}`}>
+            <div onMouseEnter={() => {
+                setDropdown(true)
+            }} onMouseLeave={() => {
+                setDropdown(false)
+            }} className={`w-80 bg-white h-[250px] px-5 py-2 absolute transition-all duration-1000 top-14 right-11 z-[99999] ${showProfile || showDropdown ? "visible " : "hidden"}`}>
                 <div className='flex flex-col border-b border-slate-300 pb-4'>
                     <h1 className='text-[#282C3F] font-bold text-md '>Welcome</h1>
                     <h1 className='text-slate-600 font-light text-sm  '>To Access Account and Manage Orders</h1>
                     <button className='px-2 py-1 text-[#ffb71b] text-sm border w-28 mt-1 bg-black border-slate-500'> Login/Signup</button>
                 </div>
-                <ul className='flex flex-col gap-1 text-slate-600 text-sm'>
+                <ul className='flex flex-col border-b border-slate-300 pb-4 pt-3 gap-1 text-slate-600 text-sm'>
                     {
                         ['Orders', 'Wishlist', 'Contact Us', 'Gift Cards'].map((list) => {
                             return <li>{list}</li>
