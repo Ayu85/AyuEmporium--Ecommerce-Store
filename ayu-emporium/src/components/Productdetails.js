@@ -46,14 +46,14 @@ const Details = () => {
                     <h1 className=' text-xl text-[#FFB71B] font-semibold'>(Rs.{data?.details?.bestPrice?.price?.mrp - data?.details?.bestPrice?.price?.discounted} OFF)</h1>
                 </div>
                 <h1 className='text-[#03A685] font-semibold'>Incl. of all taxes</h1>
-                <h1>Select Size</h1>
+                <h1 className='text-lg font-bold mt-3'>Select Size</h1>
                 <div className='flex items-center gap-4'>
-                    <h1 className='text-md font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>32</h1>
-                    <h1 className='text-md font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>36</h1>
-                    <h1 className='text-md font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>38</h1>
-                    <h1 className='text-md font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>40</h1>
-                    <h1 className='text-md font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>44</h1>
-                    <h1 className='text-md font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>46</h1>
+                    <h1 className='text-md cursor-pointer hover:text-white hover:bg-[#1C161A] hover:border-[#FFB71B] transition-all duration-200 font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>32</h1>
+                    <h1 className='text-md cursor-pointer hover:text-white hover:bg-[#1C161A] hover:border-[#FFB71B] transition-all duration-200 font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>36</h1>
+                    <h1 className='text-md cursor-pointer hover:text-white hover:bg-[#1C161A] hover:border-[#FFB71B] transition-all duration-200 font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>38</h1>
+                    <h1 className='text-md cursor-pointer hover:text-white hover:bg-[#1C161A] hover:border-[#FFB71B] transition-all duration-200 font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>40</h1>
+                    <h1 className='text-md cursor-pointer hover:text-white hover:bg-[#1C161A] hover:border-[#FFB71B] transition-all duration-200 font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>44</h1>
+                    <h1 className='text-md cursor-pointer hover:text-white hover:bg-[#1C161A] hover:border-[#FFB71B] transition-all duration-200 font-bold rounded-full py-3 w-12 text-center border-slate-400 border'>46</h1>
                 </div>
             </div>
 
