@@ -107,10 +107,16 @@ export const Header2 = () => {
                 setShowProfile(true)
             }} onMouseLeave={() => {
                 setShowProfile(false)
-            }} className='flex page_title flex-col items-center relative cursor-pointer hover:text-[#FFB71B]'>
+            }} className='flex page_title flex-col items-center relative cursor-pointer hover:text-[#ffb71b]'>
                 <FiUser /><span className='text-sm'>Profile</span>
             </div>
-            <div className={`w-80 bg-white h-[300px] absolute transition-all duration-150 top-14 right-11 z-[99999] ${showProfile ? "opacity-100 " : "opacity-0"}`}></div>
+            <div className={`w-80 bg-white h-[300px] px-5 py-2 absolute transition-all duration-150 top-14 right-11 z-[99999] ${1 ? "opacity-100 " : "opacity-0"}`}>
+                <div className='flex flex-col '>
+                    <h1 className='text-[#282C3F] font-bold text-md '>Welcome</h1>
+                    <h1 className='text-slate-600 font-light text-sm  '>To Access Account and Manage Orders</h1>
+                    <button className='px-2 py-1 text-[#ffb71b] text-sm border w-28 mt-1 bg-black border-slate-500'> Login/Signup</button>
+                </div>
+            </div>
 
             <div className='flex page_title flex-col items-center'><IoMdHeartEmpty /><span className='text-sm'>Wishlist</span>
             </div>
