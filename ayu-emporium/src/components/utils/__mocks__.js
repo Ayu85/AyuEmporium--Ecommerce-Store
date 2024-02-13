@@ -133,4 +133,67 @@ export const menswear = [
         "discount": "25%",
         "price": "$59.99"
     },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/8889611/2019/3/20/3eae8fb4-b7ca-4e01-80bf-d1e59ab1568d1553080254589-Roadster-Men-Black--White-Regular-Fit-Checked-Casual-Shirt-9-1.jpg",
+        "name": "Checked Dress Shirt",
+        "about": "Make a statement with this sharp checked dress shirt. Its tailored fit and sophisticated pattern elevate any ensemble.",
+        "discount": "20%",
+        "price": "$49.99"
+    },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/25351552/2023/10/6/86ab8e0d-a33f-4db6-ac59-84cc7d1562d81696578649917PowerlookMenCamelBrownOpaquePrintedCasualShirt1.jpg",
+        "name": "Graphic Print Tee",
+        "about": "Show off your personality with this trendy graphic print tee. Its bold design and comfortable fit make it a standout choice.",
+        "discount": "10%",
+        "price": "$34.99"
+    },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1849875/2023/7/14/b1dc8010-eea6-4849-a02a-85a27cd45bb21689328395526-Hancock-Men-Black-Slim-Fit-Formal-Shirt-9391689328394990-1.jpg",
+        "name": "Polo Shirt",
+        "about": "Step up your casual game with this classic polo shirt. Its timeless style and breathable fabric ensure all-day comfort.",
+        "discount": "15%",
+        "price": "$39.99"
+    },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12853516/2023/2/10/ef847313-84e9-4e73-93b7-86512ad0d5701676013978563THEBEARHOUSEMenMaroonGreySlimFitSolidCasualShirt2.jpg",
+        "name": "Striped Oxford Shirt",
+        "about": "Make a sophisticated statement with this striped Oxford shirt. Its crisp design and tailored fit exude effortless style.",
+        "discount": "10%",
+        "price": "$44.99"
+    },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7255992/2018/11/26/2f3102f4-feb4-45d7-95bf-f952f7b68c281543222709928-Roadster-Men-Navy-Blue-Regular-Fit-Solid-Casual-Shirt-231543222709786-1.jpg",
+        "name": "Casual Button-Down Shirt",
+        "about": "Stay stylish and comfortable with this casual button-down shirt. Its relaxed fit and versatile design make it a wardrobe staple.",
+        "discount": "20%",
+        "price": "$39.99"
+    },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12853642/2020/11/12/201ac1bb-d4fc-49e6-b956-03e00f557e151605161368573TBH-BURJ-CR1.jpg",
+        "name": "Printed Short-Sleeve Shirt",
+        "about": "Add a pop of color to your wardrobe with this printed short-sleeve shirt. Its vibrant design and lightweight fabric make it perfect for summer.",
+        "discount": "15%",
+        "price": "$34.99"
+    },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/10341699/2022/8/25/c23fd879-a9b3-4515-a181-558523a71b9b1661423122029-LOCOMOTIVE-Men-Black--Grey-Slim-Fit-Checked-Casual-Shirt-342-1.jpg",
+        "name": "Floral Print Shirt",
+        "about": "Channel laid-back vibes with this floral print shirt. Its relaxed fit and tropical pattern are perfect for beach days and casual outings.",
+        "discount": "10%",
+        "price": "$39.99"
+    },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11780968/2022/11/21/57eb174b-cbf1-4d1e-906c-dd87fcfb059d1669021381999-HIGHLANDER-Men-Green--White-Slim-Fit-Printed-Casual-Shirt-27-1.jpg",
+        "name": "Striped Polo Shirt",
+        "about": "Keep it classic with this striped polo shirt. Its timeless design and breathable fabric ensure comfort and style all day long.",
+        "discount": "20%",
+        "price": "$34.99"
+    },
+    {
+        "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/8717979/2019/3/20/9e74dcf9-8740-417d-af1f-3eb657138c451553068826154-Mast--Harbour-Men-Shirts-4141553068825026-5.jpg",
+        "name": "Slim Fit Dress Shirt",
+        "about": "Stay sharp and sophisticated with this slim fit dress shirt. Its tailored design and sleek silhouette make it perfect for formal occasions.",
+        "discount": "15%",
+        "price": "$49.99"
+    }
 ]
