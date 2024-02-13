@@ -4,9 +4,16 @@ import { useParams } from 'react-router-dom'
 import { menswear } from './utils/__mocks__'
 import { IoBagHandleOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
+import Shimmer from './Shimmer';
 
 const Productdetails = () => {
-    return (
+    const [data, setData] = useState(false)
+    useEffect(() => {
+        setTimeout(() => {
+            setData(false)
+        }, 3000)
+    }, [])
+    return data === false ? < Shimmer /> : (
         <div>
             <Header2 />
             <Details />

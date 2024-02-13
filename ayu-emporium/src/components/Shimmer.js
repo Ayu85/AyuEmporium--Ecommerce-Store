@@ -11,12 +11,12 @@ const Shimmer = () => {
 const ShimmerCard = () => {
 
     return <div className='flex flex-wrap px-5 pt-10'>
-        <div className='flex w-[60%] flex-wrap gap-3 bg-slate-300'>
+        <div className='flex flex-wrap w-[60%] gap-3 bg-slate-400 px-3 py-3'>
             {/* all 4 images */}
-            <div className='w-[420px] overflow-hidden cursor-pointer bg-slate-200'> </div>
-            <div className='w-[420px] overflow-hidden cursor-pointer bg-slate-200'> </div>
-            <div className='w-[420px] overflow-hidden cursor-pointer bg-slate-200'> </div>
-            <div className='w-[420px] overflow-hidden cursor-pointer bg-slate-200'>  </div>
+            <div className='w-[420px] animate-[pulse_0.5s_infinite] h-96 overflow-hidden cursor-pointer bg-slate-100'> </div>
+            <div className='w-[420px] animate-[pulse_0.5s_infinite] h-96 overflow-hidden cursor-pointer bg-slate-100'> </div>
+            <div className='w-[420px] animate-[pulse_0.5s_infinite] h-96 overflow-hidden cursor-pointer bg-slate-100'> </div>
+            <div className='w-[420px] animate-[pulse_0.5s_infinite] h-96 overflow-hidden cursor-pointer bg-slate-100'>  </div>
         </div>
         <div className='w-[40%]'>
             {/* product details */}
