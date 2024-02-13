@@ -27,22 +27,22 @@ const Details = () => {
         })
     }
     return <div className='flex flex-wrap px-5 pt-10'>
-        <div className='flex w-[55%] flex-wrap gap-3'>
+        <div className='flex w-[60%] flex-wrap gap-3'>
             {/* all 4 images */}
-            <div><img src={data?.display_images[0]} alt='logo' className='w-96' /> </div>
-            <div><img src={data?.display_images[1]} alt='logo' className='w-96' /> </div>
-            <div><img src={data?.display_images[2]} alt='logo' className='w-96' /> </div>
-            <div><img src={data?.display_images[3]} alt='logo' className='w-96' /> </div>
+            <div><img src={data?.display_images[0]} alt='logo' className='w-[420px]' /> </div>
+            <div><img src={data?.display_images[1]} alt='logo' className='w-[420px]' /> </div>
+            <div><img src={data?.display_images[2]} alt='logo' className='w-[420px]' /> </div>
+            <div><img src={data?.display_images[3]} alt='logo' className='w-[420px]' /> </div>
         </div>
-        <div className='w-[45%]'>
+        <div className='w-[40%]'>
             {/* product details */}
-            <div className=' flex flex-col gap-1 border-b border-slate-300 pb-3'>
+            <div className=' flex flex-col gap-1 border-b border-slate-300 pb-5'>
                 <h1 className='text-2xl font-bold text-[#282C3F] uppercase'>{data?.name}</h1>
                 <h1 className='text-[#757884] w-80 text-md font-sans line-clamp-2 '>{data?.about}</h1>
                 <h1 className=' from-black text-md  px-2 py-1 border mt-3 border-slate-300 w-44 text-center'>4.3⭐ | <span className='text-[#757884]'>8K+ Ratings</span></h1>
             </div>
 
-            <div className='flex flex-col gap-2 border-b border-slate-300 pb-3'>
+            <div className='flex flex-col gap-2 border-b border-slate-300 pb-5'>
                 <div className=' flex items-center gap-4 mt-3'>
                     <h1 className='text-2xl font-bold text-[#282C3F] uppercase'>Rs. {data?.details?.bestPrice?.price?.discounted}</h1>
                     <h1 className='text-[#757884] text-xl font-sans line-clamp-2 line-through'>MRP Rs.{data?.details?.bestPrice?.price?.mrp}</h1>
@@ -60,8 +60,19 @@ const Details = () => {
                 </div>
                 <div className='flex gap-10 pt-5'>
                     <button className='flex items-center gap-4 text-md uppercase bg-[#1C161A] text-slate-50 px-9 py-3'><IoBagHandleOutline className='text-2xl' />Add To Bag</button>
-                    <button className='flex items-center gap-4 text-md uppercase border-[#1C161A] border  px-7 py-3'><IoMdHeartEmpty className='text-2xl text-red-600' />Wishlist</button>
+                    <button className='flex items-center gap-4 text-md uppercase border-slate-400 border  px-7 py-3'><IoMdHeartEmpty className='text-2xl text-red-600' />Wishlist</button>
                 </div>
+
+            </div>
+            <div className='flex flex-col gap-2 font-sans pt-4'>
+                {
+                    [' 100% Original Products',
+                        'Pay on delivery might be available',
+                        'Easy 14 days returns and exchanges',
+                        ' Try & Buy might be available',].map((list) => {
+                            return <h1>{list}</h1>
+                        })
+                }
             </div>
 
 
