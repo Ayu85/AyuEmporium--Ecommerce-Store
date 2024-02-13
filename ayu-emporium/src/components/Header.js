@@ -94,12 +94,14 @@ const Header = () => {
 export const Header2 = () => {
     return <div className='w-full bg-[#1C161A] py-4 px-10 flex justify-between'>
         <div><h1 className='page_title text-3xl text-[#FFB71B]'>AyuEmporium</h1></div>
-        <div className='text-white page_title    text-2xl flex gap-6 items-center'>
-            <div className='flex flex-col items-center'><FiUser /><span className='text-sm'>Profile</span>
+        <div className='text-white     text-2xl flex gap-6 items-center'>
+
+            <input type='text' className='w-[500px] py-3 text-sm capitalize pl-3 text-slate-500' placeholder='search for  products brand and more' />
+            <div className='flex page_title flex-col items-center'><FiUser /><span className='text-sm'>Profile</span>
             </div>
-            <div className='flex flex-col items-center'><IoMdHeartEmpty /><span className='text-sm'>Wishlist</span>
+            <div className='flex page_title flex-col items-center'><IoMdHeartEmpty /><span className='text-sm'>Wishlist</span>
             </div>
-            <div className='flex flex-col items-center'><IoBagHandleOutline /><span className='text-sm'>Bag</span>
+            <div className='flex page_title flex-col items-center'><IoBagHandleOutline /><span className='text-sm'>Bag</span>
             </div>
 
         </div>
