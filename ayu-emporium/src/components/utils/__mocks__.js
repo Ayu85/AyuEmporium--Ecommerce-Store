@@ -59,4 +59,14 @@ export const categories = [
         name: 'Mens Footwear',
         discount: '40-80% OFF'
     },
+    {
+        logo: 'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/24785094/2023/9/2/58502db2-1304-409a-8212-8b7cfcec369816936693574591ridentQueenBedsheetSet144TC100CottonMagnoliaGarden1.jpg',
+        name: 'Bed Sheets',
+        discount: '60-80% OFF'
+    },
+    {
+        logo: 'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/14041678/2022/1/28/16dead69-11a4-4794-b44a-494cebbfee1b1643362445870GEMBLUEBioCareUnisexAloeAftersunLotion200ml1.jpg',
+        name: 'Skin Care',
+        discount: '60-80% OFF'
+    },
 ]
