@@ -16,6 +16,10 @@ const approute = createBrowserRouter([
   {
     path: '/details/:id',
     element: <Productdetails />
+  },
+  {
+    path: '/categories/1',
+    element: <Menswear />
   }
 ])
 function App() {
