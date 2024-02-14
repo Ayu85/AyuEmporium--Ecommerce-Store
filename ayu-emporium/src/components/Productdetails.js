@@ -8,6 +8,8 @@ import Shimmer from './Shimmer';
 import { MdLocalOffer } from "react-icons/md";
 import { useDispatch } from 'react-redux';
 import { addItem } from './redux/slices/cartSlice'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Productdetails = () => {
     const [data, setData] = useState(false)
     useEffect(() => {
@@ -26,7 +28,8 @@ const Details = () => {
     const prodId = useParams()
     const [id] = useState(prodId.id)
     const [data, setData] = useState(null)
-    const [size, setSize] = useState()
+    const [size, setSize] = useState(null)
+    const [sizeError, setSizeerror] = useState(false)
     useEffect(() => {
         const d = filterData()
         setData(d[0])
@@ -67,16 +70,19 @@ const Details = () => {
                         [32, 36, 38, 40, 44, 46].map((sizes) => {
                             return <h1 onClick={() => {
                                 setSize(sizes)
+                                setSizeerror(false)
                             }} className={`${size === sizes && "bg-black text-white "} text-md cursor-pointer hover:text-white hover:bg-[#1C161A] hover:border-[#FFB71B] transition-all duration-200 font-bold rounded-full py-3 w-12 text-center border-slate-400 border`}>{sizes}</h1>
                         })
                     }
                 </div>
                 {/* ************************ */}
+                <h1 className='text-red-600 font-semibold'>{sizeError?"Please Select Size...":""}</h1>
                 <div className='flex gap-10 pt-5'>
                     <button onClick={() => {
-                        dispatch(addItem({ name: data?.name, price: data?.details?.bestPrice?.price?.mrp, size: size }))
+                        size ? dispatch(addItem({ name: data?.name, price: data?.details?.bestPrice?.price?.mrp, size: size })) : setSizeerror(true)
                     }} className='flex items-center gap-4 text-md uppercase bg-[#1C161A] text-slate-50 px-9 py-3'><IoBagHandleOutline className='text-2xl' />Add To Bag</button>
                     <button className='flex items-center gap-4 text-md uppercase border-slate-400 border  px-7 py-3'><IoMdHeartEmpty className='text-2xl text-red-600' />Wishlist</button>
+
                 </div>
                 {/* ************************ */}
 
