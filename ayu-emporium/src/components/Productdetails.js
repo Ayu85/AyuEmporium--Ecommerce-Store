@@ -89,6 +89,8 @@ const Details = () => {
                 </h1>
                 <ul className='list-disc pl-3 pt-3 font-sans'>
                     <li>{data?.details?.bestPrice?.display[0].label} {data?.details?.bestPrice?.display[0].value}</li>
+                    <li>{data?.details?.bestPrice?.display[1].label} {data?.details?.bestPrice?.display[1].value}</li>
+                    <li>{data?.details?.bestPrice?.display[2].label} {data?.details?.bestPrice?.display[2].value}</li>
                 </ul>
             </div>
 
