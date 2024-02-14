@@ -9,6 +9,7 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
 
 import { toogleCategories } from './redux/slices/showCategories'
+import { useNavigate } from 'react-router-dom';
 const Header = () => {
     const [isScrolled, setScrolled] = useState(false)
     const checkScroll = () => {
@@ -96,6 +97,7 @@ export const Header2 = () => {
     const [showProfile, setShowProfile] = useState(false)
     const [showDropdown, setDropdown] = useState(false)
     const cartItems = useSelector(store => store.cart.items)
+    const navigate = useNavigate()
     return <div className='w-full bg-[#1C161A] py-4 px-10 flex justify-between'>
         <div><h1 className='page_title text-3xl text-[#FFB71B]'>AyuEmporium</h1></div>
         <div className='text-white hidden lg:flex text-xl  gap-6 items-center '>
@@ -136,8 +138,10 @@ export const Header2 = () => {
 
             <div className='flex page_title flex-col items-center'><IoMdHeartEmpty /><span className='text-sm'>Wishlist</span>
             </div>
-            <div
-                className='flex page_title flex-col items-center relative'>
+            <div onClick={() => {
+                navigate('/cart')
+            }}
+                className='flex page_title flex-col items-center relative cursor-pointer hover:scale-110 transition-all'>
                 <IoBagHandleOutline /><span className='text-sm'>Bag</span>
                 <span className='absolute -right-4 -top-2 text-sm bg-[#ffb71b] rounded-full font-semibold text-black px-2 py-1'>{cartItems.length}</span>
             </div>
