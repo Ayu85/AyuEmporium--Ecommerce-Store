@@ -6,6 +6,7 @@ import { IoBagHandleOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import Shimmer from './Shimmer';
 import { MdLocalOffer } from "react-icons/md";
+import { useDispatch } from 'react-redux';
 
 const Productdetails = () => {
     const [data, setData] = useState(false)
@@ -34,6 +35,8 @@ const Details = () => {
             return items.id == id
         })
     }
+    const dispatch = useDispatch();
+        
     return <div className='flex flex-wrap px-5 pt-10'>
         <div className='flex w-[60%] flex-wrap gap-3'>
             {/* all 4 images */}
