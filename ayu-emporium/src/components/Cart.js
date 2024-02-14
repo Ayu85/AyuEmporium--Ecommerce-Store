@@ -74,7 +74,7 @@ const EmptyCart = () => {
     return <div className='flex items-center justify-center mt-10'>
         <div>
             <img src={sadlogo} alt='logo' className='w-64 emptycart' />
-            <img src={emptycart2} alt='logo' className='w-72' />
+            <img src={emptycart2} alt='logo' className='w-72 cartslider' />
         </div>
     </div>
 }
