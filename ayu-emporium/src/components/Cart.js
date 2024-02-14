@@ -5,9 +5,12 @@ import { useSelector } from 'react-redux';
 import { MdDeleteForever } from "react-icons/md";
 import { MdCurrencyRupee } from "react-icons/md";
 import { SiMoneygram } from "react-icons/si";
-
+import sadlogo from '../assets/sad.png'
+import emptycart from '../assets/emptycart.png'
 const Cart = () => {
-    return (
+    const items = useSelector(store => store.cart.items)
+
+    return items.length === 0 ? <EmptyCart /> : (
         <div>
             <Header2 />
             <CartDetails />
@@ -68,10 +71,10 @@ const CartDetails = () => {
     </div>
 }
 const EmptyCart = () => {
-    const items = useSelector(store => store.cart.items)
-    return <div>
+    return <div className='flex items-center justify-center mt-10'>
         <div>
-            <img/>
+            <img src={sadlogo} alt='logo' className='w-64' />
+            <img src={emptycart} alt='logo' className='w-72' />
         </div>
     </div>
 }
