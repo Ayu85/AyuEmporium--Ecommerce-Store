@@ -40,7 +40,7 @@ body {
 }
 
 .heroslider {
-  animation: heroslide 40s infinite ease-in-out ;
+  animation: heroslide 40s infinite ease-in-out;
 }
 
 @keyframes heroslide {
@@ -52,9 +52,25 @@ body {
     transform: translateX(-2900px);
 
   }
+
   100% {
     transform: translateX(0px);
 
+  }
+
+}
+
+.emptycart {
+  animation: wiggle 2s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(2);
   }
 
 }
