@@ -4,6 +4,7 @@ import { BiSolidOffer } from "react-icons/bi";
 import { useSelector } from 'react-redux';
 import { MdDeleteForever } from "react-icons/md";
 import { MdCurrencyRupee } from "react-icons/md";
+import { SiMoneygram } from "react-icons/si";
 
 const Cart = () => {
     return (
@@ -36,7 +37,7 @@ const CartDetails = () => {
                                 <div>
                                     <h1 className='page_title'>{prod?.name}</h1>
                                     <h1><span className='page_title'>Size: </span>{prod?.size}</h1>
-                                    <h1 className='flex items-center'><span className='page_title'>Price:  </span> <MdCurrencyRupee className='pl-1 text-lg'/>
+                                    <h1 className='flex items-center'><span className='page_title'>Price:  </span> <MdCurrencyRupee className='pl-1 text-lg' />
                                         {prod?.price}</h1>
                                     <button className='text-red-600  text-3xl hover:scale-110 transition-all mt-1 cursor-pointer'><MdDeleteForever />
                                     </button>
@@ -48,8 +49,12 @@ const CartDetails = () => {
                 </div>
                 <div>
                     {/* right box with summary */}
-                    <h1>Order Summary</h1>
-                    <h2>Login to get flat 40% off on first order</h2>
+                    <h1 className='text-lg flex items-center gap-1'>Order Summary<SiMoneygram />
+                    </h1>
+                    <h2 className='pt-2'><span className='font-black cursor-pointer'> Login</span> to get flat 40% off on first order</h2>
+                    <div>
+                        <h1 className='font-black pt-3'>Price Details :<span className='font-light'> ({items.length} items)</span></h1>
+                    </div>
                 </div>
             </div>
             <div></div>
