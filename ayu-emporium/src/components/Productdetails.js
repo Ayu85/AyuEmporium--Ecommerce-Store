@@ -88,7 +88,7 @@ const Details = () => {
                 <h1 className='flex items-center gap-2 text-md from-black pt-4'>Best Price <span className=' text-[#FFB91B] font-semibold'>Rs. {data?.details?.bestPrice?.price?.discounted}</span>
                 </h1>
                 <ul className='list-disc pl-3 pt-3 font-sans'>
-                    <li>{data?.details?.bestPrice?.display[0].label} {data?.details?.bestPrice?.display[0].value}</li>
+                    <li>{data?.details?.bestPrice?.display[0].label} <span className='font-semibold'>{data?.details?.bestPrice?.display[0].value}</span></li>
                     <li>{data?.details?.bestPrice?.display[1].label} {data?.details?.bestPrice?.display[1].value}</li>
                     <li>{data?.details?.bestPrice?.display[2].label} {data?.details?.bestPrice?.display[2].value}</li>
                 </ul>
