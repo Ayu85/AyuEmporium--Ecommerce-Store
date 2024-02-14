@@ -1,4 +1,5 @@
 import Body from "./components/Body";
+import Cart from "./components/Cart";
 import Menswear from "./components/Menswear";
 import Productdetails from "./components/Productdetails";
 import store from "./components/redux/store";
@@ -20,6 +21,10 @@ const approute = createBrowserRouter([
   {
     path: '/categories/1',
     element: <Menswear />
+  },
+  {
+    path: '/cart',
+    element: <Cart />
   }
 ])
 function App() {
