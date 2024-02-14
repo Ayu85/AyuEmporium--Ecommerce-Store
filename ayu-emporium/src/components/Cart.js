@@ -14,8 +14,8 @@ const Cart = () => {
 }
 const CartDetails = () => {
     const items = useSelector(store => store.cart.items)
-    return <div className='flex justify-center items-center mt-10 '>
-        <div className='w-[60%] bg-slate-200 flex  justify-center py-10 h-[80vh] '>
+    return <div className='flex justify-center items-center mt-10   '>
+        <div className='w-[60%] bg-slate-200 flex  justify-center h-[80vh] pt-10 '>
             <div className='flex gap-10'>
                 <div className='border-r border-black px-4'>
                     {/* left box with items */}
