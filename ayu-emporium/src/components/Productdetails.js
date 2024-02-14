@@ -76,11 +76,11 @@ const Details = () => {
                     }
                 </div>
                 {/* ************************ */}
-                <h1 className='text-red-600 font-semibold'>{sizeError?"Please Select Size...":""}</h1>
+                <h1 className={`${sizeError && "animate-[pulse_linear_0.5s_infinite] "} text-red-600 font-semibold`}>{sizeError ? "Please Select Size..." : ""}</h1>
                 <div className='flex gap-10 pt-5'>
                     <button onClick={() => {
                         size ? dispatch(addItem({ name: data?.name, price: data?.details?.bestPrice?.price?.mrp, size: size })) : setSizeerror(true)
-                    }} className='flex items-center gap-4 text-md uppercase bg-[#1C161A] text-slate-50 px-9 py-3'><IoBagHandleOutline className='text-2xl' />Add To Bag</button>
+                    }} className={` flex items-center gap-4 text-md uppercase bg-[#1C161A] text-slate-50 px-9 py-3`}><IoBagHandleOutline className='text-2xl' />Add To Bag</button>
                     <button className='flex items-center gap-4 text-md uppercase border-slate-400 border  px-7 py-3'><IoMdHeartEmpty className='text-2xl text-red-600' />Wishlist</button>
 
                 </div>
