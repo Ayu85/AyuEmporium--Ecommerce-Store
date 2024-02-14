@@ -5,6 +5,7 @@ import { menswear } from './utils/__mocks__'
 import { IoBagHandleOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import Shimmer from './Shimmer';
+import { MdLocalOffer } from "react-icons/md";
 
 const Productdetails = () => {
     const [data, setData] = useState(false)
@@ -71,7 +72,7 @@ const Details = () => {
                 </div>
 
             </div>
-            <div className='flex flex-col gap-2 font-sans pt-4'>
+            <div className='flex flex-col gap-2 font-sans pt-4 border-b border-slate-300 pb-5'>
                 {
                     [' 100% Original Products',
                         'Pay on delivery might be available',
@@ -80,6 +81,15 @@ const Details = () => {
                             return <h1>{list}</h1>
                         })
                 }
+            </div>
+            <div className='pt-3'>
+                <h1 className='flex items-center gap-2 font-semibold'>BEST OFFERS<MdLocalOffer />
+                </h1>
+                <h1 className='flex items-center gap-2 text-md from-black pt-4'>Best Price <span className=' text-[#FFB91B] font-semibold'>Rs. {data?.details?.bestPrice?.price?.discounted}</span>
+                </h1>
+                <ul className='list-disc pl-3 pt-3 font-sans'>
+                    <li>{data?.details?.bestPrice?.display[0].label} {data?.details?.bestPrice?.display[0].value}</li>
+                </ul>
             </div>
 
 
