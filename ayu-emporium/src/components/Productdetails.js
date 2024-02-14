@@ -7,7 +7,7 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import Shimmer from './Shimmer';
 import { MdLocalOffer } from "react-icons/md";
 import { useDispatch } from 'react-redux';
-import { addItem } from './redux/slices/cartSlice'
+import { addItem, setPrice } from './redux/slices/cartSlice'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Productdetails = () => {
@@ -80,6 +80,7 @@ const Details = () => {
                 <div className='flex gap-10 pt-5'>
                     <button onClick={() => {
                         size ? dispatch(addItem({ name: data?.name, price: data?.details?.bestPrice?.price?.discounted, size: size, logo: data?.image })) : setSizeerror(true)
+                        size && dispatch(setPrice(data?.details?.bestPrice?.price?.discounted))
                     }} className={` flex items-center gap-4 text-md uppercase bg-[#1C161A] text-slate-50 px-9 py-3`}><IoBagHandleOutline className='text-2xl' />Add To Bag</button>
                     <button className='flex items-center gap-4 text-md uppercase border-slate-400 border  px-7 py-3'><IoMdHeartEmpty className='text-2xl text-red-600' />Wishlist</button>
 
