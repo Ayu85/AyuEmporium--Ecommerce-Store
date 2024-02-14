@@ -71,9 +71,11 @@ const CartDetails = () => {
     </div>
 }
 const EmptyCart = () => {
-    return <div className='flex items-center justify-center mt-10'>
-        <div>
+    return <div className='flex flex-col items-center justify-center'>
+        <Header2 />
+        <div className='flex flex-col justify-center items-center'>
             <img src={sadlogo} alt='logo' className='w-64 emptycart' />
+            <h1 className='page_title text-2xl'>Please Add Items</h1>
             <img src={emptycart2} alt='logo' className='w-72 cartslider' />
         </div>
     </div>
