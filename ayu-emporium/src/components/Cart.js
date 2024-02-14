@@ -56,7 +56,7 @@ const CartDetails = () => {
                     <div className='pt-3'>
                         <h1 className='font-black '>Price Details :<span className='font-light'> ({items.length} items)</span></h1>
                         <h1 className='flex justify-between mt-2 w-52 text-slate-700'>Total MRP <span>{totalPrice * 2}</span></h1>
-                        <h1 className='flex justify-between mt-2 w-52 text-slate-700'>Discount on MRP <span>{totalPrice/2}</span></h1>
+                        <h1 className='flex justify-between mt-2 w-52 text-slate-700'>Discount on MRP <span>{totalPrice / 2}</span></h1>
                         <h1 className='flex justify-between mt-2 w-52 text-slate-700 border-b border-slate-800 pb-2'>Total MRP <span>{totalPrice}</span></h1>
                         <h1 className='flex justify-between mt-2 w-52 text-black font-semibold border-b border-slate-800 pb-2'>Total Amount <span>{totalPrice}</span></h1>
                     </div>
@@ -67,5 +67,12 @@ const CartDetails = () => {
         </div>
     </div>
 }
-
+const EmptyCart = () => {
+    const items = useSelector(store => store.cart.items)
+    return <div>
+        <div>
+            <img/>
+        </div>
+    </div>
+}
 export default Cart
