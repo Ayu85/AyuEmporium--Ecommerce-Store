@@ -1,5 +1,6 @@
 import React from 'react'
 import { Header2 } from './Header'
+import { BiSolidOffer } from "react-icons/bi";
 
 const Cart = () => {
     return (
@@ -7,6 +8,28 @@ const Cart = () => {
             <Header2 />
         </div>
     )
+}
+const CartDetails = () => {
+    return <div>
+        <div className='flex'>
+            <div>
+                {/* left box with items */}
+                <div className='flex flex-col gap-2'>
+                    <h1 className='flex items-center text-lg'><BiSolidOffer className='text-xl' />
+                        Available Offers</h1>
+                    <h2 className='font-sans'>10% instant discount on HDFC bank credit and debit cards</h2>
+                    <h2 className='font-sans'>15% instant discount on SBI Rupay card</h2>
+                </div>
+            </div>
+            <div>
+                {/* right box with summary */}
+                <h1>Order Summary</h1>
+                <h2>Login to get flat 40% off on first order</h2>
+            </div>
+        </div>
+        <div></div>
+
+    </div>
 }
 
 export default Cart
