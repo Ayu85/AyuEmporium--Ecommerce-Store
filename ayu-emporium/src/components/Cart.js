@@ -63,6 +63,7 @@ const CartDetails = () => {
                         <h1 className='flex justify-between mt-2 w-52 text-slate-700 border-b border-slate-800 pb-2'>Total MRP <span>{totalPrice}</span></h1>
                         <h1 className='flex justify-between mt-2 w-52 text-black font-semibold border-b border-slate-800 pb-2'>Total Amount <span>{totalPrice}</span></h1>
                     </div>
+                    <button className='bg-black text-white px-4 py-2 mt-7 hover:scale-105 transition-all'>Proceed To Checkout</button>
                 </div>
             </div>
             <div></div>
