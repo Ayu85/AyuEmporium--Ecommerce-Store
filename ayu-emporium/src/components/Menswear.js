@@ -4,8 +4,10 @@ import Header, { Header2 } from './Header'
 import { menswear } from './utils/__mocks__'
 import ProductCard from './ProductCard,'
 import { BANNER_URL } from './utils/constants'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 const Menswear = () => {
+    const location =useLocation()
+    console.log(location);
     let [currentBanner, setBanner] = useState(0)
     useEffect(() => {
         document.title = 'Mens Wear - AyuEmporium'

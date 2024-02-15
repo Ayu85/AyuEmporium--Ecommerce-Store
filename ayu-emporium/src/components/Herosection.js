@@ -3,8 +3,9 @@ import heroImg from '../assets/heroImg3.png'
 import Header from './Header'
 import { motion } from 'framer-motion'
 import blob from '../assets/blob vector.png'
+import { useLocation } from 'react-router-dom'
 const Herosection = () => {
-
+ 
   return (
     <div className=' flex relative flex-col gap-16 justify-center items-center  h-[110vh] bg-[#FFB71B] '>
       <Header />
