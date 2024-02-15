@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import blob from '../assets/blob vector.png'
 import { useLocation } from 'react-router-dom'
 import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross1 } from "react-icons/rx";
 
 const Herosection = () => {
   const [showHamMenu, setHam] = useState(false);
@@ -18,7 +19,10 @@ const Herosection = () => {
         setHam(!showHamMenu)
       }} />
       </nav>
-      {<div className={`fixed top-0 text-white  h-[100vh] px-10 bg-[#1c161ac8] backdrop-blur-md   ${!showHamMenu && "-translate-x-[1200px] transition-all duration-300"} ${showHamMenu && "translate-x-0 transition-all duration-300"}  z-[999999] backdrop-blur-md w-screen `}>side bar</div>
+      {<div className={`fixed top-0 text-white  h-[100vh] px-10 bg-[#1c161ac8] backdrop-blur-md   ${!showHamMenu && "-translate-x-[1200px] transition-all duration-300"} ${showHamMenu && "translate-x-0 transition-all duration-300"}  z-[999999] backdrop-blur-md w-screen `}>
+        <div className='flex justify-between text-4xl py-3'><h1 className='page_title text-[#FFB71B]  text-4xl '>AyuEmporium</h1> <RxCross1 />
+        </div>
+      </div>
       }
       {/* <img src='https://cdn.shopify.com/s/files/1/0393/0007/1555/files/christmas_elements-desktop.png?v=1701336847' */}
       {/* alt='bg' className='absolute -z-0' /> */}
