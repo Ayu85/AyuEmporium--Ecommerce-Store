@@ -55,7 +55,7 @@ const Details = () => {
                 <div className='w-[420px] overflow-hidden cursor-pointer hidden md:visibible lg:block'><img src={data?.display_images[2]} alt='logo' className='w-[420px]  hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
                 <div className='w-[420px] overflow-hidden cursor-pointer hidden md:visibible lg:block'><img src={data?.display_images[3]} alt='logo' className='w-[420px]  hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
             </div>
-            <div className=''>
+            <div className='w-[800px]'>
                 {/* product details */}
                 <div className=' flex flex-col gap-1 border-b border-slate-300 pb-5'>
                     <h1 className='text-2xl font-bold text-[#282C3F] uppercase'>{data?.name}</h1>
