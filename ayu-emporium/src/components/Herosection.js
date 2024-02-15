@@ -20,7 +20,9 @@ const Herosection = () => {
       }} />
       </nav>
       {<div className={`fixed top-0 text-white  h-[100vh] px-10 bg-[#1c161ac8] backdrop-blur-md   ${!showHamMenu && "-translate-x-[1200px] transition-all duration-300"} ${showHamMenu && "translate-x-0 transition-all duration-300"}  z-[999999] backdrop-blur-md w-screen `}>
-        <div className='flex justify-between text-4xl py-3'><h1 className='page_title text-[#FFB71B]  text-4xl '>AyuEmporium</h1> <RxCross1 />
+        <div className='flex justify-between text-4xl py-3'><h1 className='page_title text-[#FFB71B]  text-4xl '>AyuEmporium</h1> <RxCross1 className='cursor-pointer' onClick={() => {
+          setHam(false)
+        }} />
         </div>
       </div>
       }
