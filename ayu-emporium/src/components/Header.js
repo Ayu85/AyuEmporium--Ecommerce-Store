@@ -152,6 +152,15 @@ export const Header2 = () => {
 
         </div>
         <div className='text-white text-3xl lg:hidden'><RxHamburgerMenu /></div>
+        <div className={`fixed lg:hidden flex flex-col top-0 text-white  h-[100vh] px-10 bg-[#1c161ac8] backdrop-blur-md z-[999999] backdrop-blur-md w-screen `}>
+            <div className='flex justify-between text-4xl py-3'><h1 className='page_title text-[#FFB71B]  text-4xl '>AyuEmporium</h1>
+            </div>
+            <ul className='text-xl py-3 flex flex-col gap-3 mt-10 '>
+                {['Home', 'About', 'Shop', 'My Account', `Cart`, 'Become a Seller'].map((list) => {
+                    return <li className='cursor-pointer hover:text-[#FFB71B]'>{list}</li>
+                })}
+            </ul>
+        </div>
     </div>
 }
 
