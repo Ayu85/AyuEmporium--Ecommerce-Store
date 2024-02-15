@@ -5,8 +5,9 @@ import { menswear } from './utils/__mocks__'
 import ProductCard from './ProductCard,'
 import { BANNER_URL } from './utils/constants'
 import { Link, useLocation } from 'react-router-dom'
+import Breadcrums from './Breadcrums'
 const Menswear = () => {
-    const location =useLocation()
+    const location = useLocation()
     console.log(location);
     let [currentBanner, setBanner] = useState(0)
     useEffect(() => {
@@ -23,13 +24,13 @@ const Menswear = () => {
     }
 
     return (
-        <div className='flex flex-col items-center justify-center overflow-hidden'>
+        <div className='flex flex-col items-start justify-center overflow-hidden'>
             <Header2 />
             <div className=' flex transition-all duration-500 '>
                 <img src={BANNER_URL[currentBanner]} alt='banner' className='w-screen h-[100vh]' />
-
             </div>
-            <div className='flex gap-5 mt-24 flex-wrap justify-center '>
+            {/* <Breadcrums path={location.pathname} /> */}
+            <div className='flex gap-5 mt-10 flex-wrap justify-center '>
                 {
                     menswear.map((product, keys) => {
                         return <Link to={`/details/${product.id}`}><ProductCard {...product} /></Link>

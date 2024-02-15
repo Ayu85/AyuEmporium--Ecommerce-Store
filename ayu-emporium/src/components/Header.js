@@ -98,8 +98,10 @@ export const Header2 = () => {
     const [showDropdown, setDropdown] = useState(false)
     const cartItems = useSelector(store => store.cart.items)
     const navigate = useNavigate()
-    return <div className='w-full bg-[#1C161A] py-4 px-10 flex justify-between'>
-        <div><h1 className='page_title text-3xl text-[#FFB71B]'>AyuEmporium</h1></div>
+    return <div className='w-full cursor-pointer bg-[#1C161A] py-4 px-10 flex justify-between'>
+        <div onClick={() => {
+            navigate('/')
+        }}><h1 className='page_title text-3xl text-[#FFB71B]'>AyuEmporium</h1></div>
         <div className='text-white hidden lg:flex text-xl  gap-6 items-center '>
             <div className='relative'>
                 <input type='text' className='w-[500px] py-2
