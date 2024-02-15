@@ -7,7 +7,7 @@ import { FiUser } from "react-icons/fi";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 
 import { toogleCategories } from './redux/slices/showCategories'
 import { useNavigate } from 'react-router-dom';
@@ -99,7 +99,7 @@ export const Header2 = () => {
     const [showDropdown, setDropdown] = useState(false)
     const cartItems = useSelector(store => store.cart.items)
     const navigate = useNavigate()
-
+    const [showHamMenu, setHam] = useState(false);
     return <div className='w-full cursor-pointer bg-[#1C161A] py-4 px-10 flex justify-between items-center'>
         <div onClick={() => {
             navigate('/')
@@ -151,9 +151,14 @@ export const Header2 = () => {
             </div>
 
         </div>
-        <div className='text-white text-3xl lg:hidden'><RxHamburgerMenu /></div>
-        <div className={`fixed lg:hidden flex flex-col top-0 text-white  h-[100vh] px-10 bg-[#1c161ac8] backdrop-blur-md z-[999999] backdrop-blur-md w-screen `}>
-            <div className='flex justify-between text-4xl py-3'><h1 className='page_title text-[#FFB71B]  text-4xl '>AyuEmporium</h1>
+        <div className='text-white text-3xl lg:hidden'><RxHamburgerMenu onClick={() => {
+            setHam(true)
+        }} /></div>
+        {<div className={`fixed lg:hidden flex flex-col top-0 text-white  h-[100vh] px-10 bg-[#1c161ac8] backdrop-blur-md right-0   ${!showHamMenu && "translate-x-[1200px] transition-all duration-300"} ${showHamMenu && "-translate-x-0 transition-all duration-300"}  z-[999999] backdrop-blur-md w-screen `}>
+            <div className='flex justify-between text-4xl py-3'><h1 className='page_title text-[#FFB71B]  text-4xl '>AyuEmporium</h1> <RxCross1 className='cursor-pointer active:scale-150 transition-all' onClick={() => {
+                setHam(false)
+            }} />
+
             </div>
             <ul className='text-xl py-3 flex flex-col gap-3 mt-10 '>
                 {['Home', 'About', 'Shop', 'My Account', `Cart`, 'Become a Seller'].map((list) => {
@@ -161,6 +166,7 @@ export const Header2 = () => {
                 })}
             </ul>
         </div>
+        }
     </div>
 }
 
