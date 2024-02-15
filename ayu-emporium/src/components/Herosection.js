@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import heroImg from '../assets/heroImg3.png'
 import Header from './Header'
 import { motion } from 'framer-motion'
@@ -7,12 +7,19 @@ import { useLocation } from 'react-router-dom'
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Herosection = () => {
-
+  const [showHamMenu, setHam] = useState(false);
+  const handleScroll = () => {
+    showHamMenu ? document.getElementsByTagName('body')[0].style.overflow = 'hidden' : document.getElementsByTagName('body')[0].style.overflow = 'visible'
+  }
   return (
     <div className=' flex relative flex-col gap-16 justify-center items-center  h-[110vh] bg-[#FFB71B] '>
       <Header />
-      <nav className='fixed top-0 bg-[#1c161aa7] backdrop-blur-md cursor-pointer py-3 w-full lg:hidden md:hidden text-white text-4xl pl-3'><RxHamburgerMenu />
-</nav>
+      <nav className='fixed top-0  bg-[#1c161ac8] backdrop-blur-md cursor-pointer py-3 w-full lg:hidden md:hidden text-white text-4xl pl-3'><RxHamburgerMenu onClick={() => {
+        setHam(!showHamMenu)
+      }} />
+      </nav>
+      {<div className={`fixed top-0 text-white  h-[100vh] px-10 bg-[#1c161ac8] backdrop-blur-md   ${!showHamMenu && "-translate-x-[1200px] transition-all duration-300"} ${showHamMenu && "translate-x-0 transition-all duration-300"}  z-[999999] backdrop-blur-md w-screen `}>side bar</div>
+      }
       {/* <img src='https://cdn.shopify.com/s/files/1/0393/0007/1555/files/christmas_elements-desktop.png?v=1701336847' */}
       {/* alt='bg' className='absolute -z-0' /> */}
       <div className='flex lg:flex-nowrap md:flex-nowrap flex-wrap items-center lg:justify-between md:justify-between sm:mt-20 justify-center  w-[75%]'>
