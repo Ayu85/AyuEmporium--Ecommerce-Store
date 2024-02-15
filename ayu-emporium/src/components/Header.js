@@ -98,6 +98,7 @@ export const Header2 = () => {
     const [showDropdown, setDropdown] = useState(false)
     const cartItems = useSelector(store => store.cart.items)
     const navigate = useNavigate()
+   
     return <div className='w-full cursor-pointer bg-[#1C161A] py-4 px-10 flex justify-between'>
         <div onClick={() => {
             navigate('/')
@@ -143,7 +144,7 @@ export const Header2 = () => {
             <div onClick={() => {
                 navigate('/cart')
             }}
-                className='flex page_title flex-col items-center relative cursor-pointer hover:scale-110 transition-all'>
+                className={`flex bag page_title flex-col items-center relative cursor-pointer hover:scale-110 transition-all`}>
                 <IoBagHandleOutline /><span className='text-sm'>Bag</span>
                 <span className='absolute -right-4 -top-2 text-sm bg-[#ffb71b] rounded-full font-semibold text-black px-2 py-1'>{cartItems.length}</span>
             </div>

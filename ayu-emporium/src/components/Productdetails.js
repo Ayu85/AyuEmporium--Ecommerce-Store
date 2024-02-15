@@ -6,7 +6,7 @@ import { IoBagHandleOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import Shimmer from './Shimmer';
 import { MdLocalOffer } from "react-icons/md";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addItem, setPrice } from './redux/slices/cartSlice'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -31,7 +31,9 @@ const Details = () => {
     const [id] = useState(prodId.id)
     const [data, setData] = useState(null)
     const [size, setSize] = useState(null)
+    const [cartFull, setCartFull] = useState(false)
     const [sizeError, setSizeerror] = useState(false)
+    const cartItems = useSelector(store => store.cart.items)
     useEffect(() => {
         const d = filterData()
         setData(d[0])
@@ -45,15 +47,15 @@ const Details = () => {
     const location = useLocation();
     return <>
         {/* <Breadcrums path={location.pathname} prod={data?.name} /> */}
-        <div className='flex flex-wrap px-5 pt-10'>
-            <div className='flex w-[60%] flex-wrap gap-3'>
+        <div className='flex flex-wrap lg:flex-nowrap md:flex-nowrap px-5 pt-10 h-max lg:pr-44 md:pr-24 justify-center gap-10'>
+            <div className='flex flex-wrap gap-3'>
                 {/* all 4 images */}
                 <div className='w-[420px] overflow-hidden cursor-pointer'><img src={data?.display_images[0]} alt='logo' className='w-[420px] hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
-                <div className='w-[420px] overflow-hidden cursor-pointer'><img src={data?.display_images[1]} alt='logo' className='w-[420px]  hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
-                <div className='w-[420px] overflow-hidden cursor-pointer'><img src={data?.display_images[2]} alt='logo' className='w-[420px]  hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
-                <div className='w-[420px] overflow-hidden cursor-pointer'><img src={data?.display_images[3]} alt='logo' className='w-[420px]  hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
+                <div className='w-[420px] overflow-hidden cursor-pointer hidden md:block lg:block'><img src={data?.display_images[1]} alt='logo' className='w-[420px]  hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
+                <div className='w-[420px] overflow-hidden cursor-pointer hidden md:visibible lg:block'><img src={data?.display_images[2]} alt='logo' className='w-[420px]  hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
+                <div className='w-[420px] overflow-hidden cursor-pointer hidden md:visibible lg:block'><img src={data?.display_images[3]} alt='logo' className='w-[420px]  hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
             </div>
-            <div className='w-[40%]'>
+            <div className=''>
                 {/* product details */}
                 <div className=' flex flex-col gap-1 border-b border-slate-300 pb-5'>
                     <h1 className='text-2xl font-bold text-[#282C3F] uppercase'>{data?.name}</h1>
@@ -80,12 +82,15 @@ const Details = () => {
                         }
                     </div>
                     {/* ************************ */}
-                    <h1 className={`${sizeError && "animate-[pulse_linear_0.5s_infinite] "} text-red-600 font-semibold`}>{sizeError ? "Please Select Size..." : ""}</h1>
+                    <h1 className={`${sizeError && "animate-[pulse_linear_0.5s_infinite] "} text-red-600 font-semibold`}>{sizeError && cartItems.length < 10 ? "Please Select Size..." : ""}</h1>
+                    <h1 className={`${cartFull && "animate-[pulse_linear_0.5s_infinite] "} text-red-600 font-semibold`}>{cartFull ? "Cart Overloaded,Please delete items..." : ""}</h1>
                     <div className='flex gap-10 pt-5'>
-                        <button onClick={() => {
-                            size ? dispatch(addItem({ name: data?.name, price: data?.details?.bestPrice?.price?.discounted, size: size, logo: data?.image })) : setSizeerror(true)
+
+                        <button disabled={cartFull && true} onClick={() => {
+                            cartItems.length > 9 && setCartFull(true)
+                            !cartFull && size ? dispatch(addItem({ name: data?.name, price: data?.details?.bestPrice?.price?.discounted, size: size, logo: data?.image })) : setSizeerror(true)
                             size && dispatch(setPrice(data?.details?.bestPrice?.price?.discounted))
-                        }} className={` flex items-center gap-4 text-md uppercase bg-[#1C161A] text-slate-50 px-9 py-3`}><IoBagHandleOutline className='text-2xl' />Add To Bag</button>
+                        }} className={`disabled:bg-red-600 disabled:cursor-not-allowed flex active:scale-125 active:bg-[#FFB71B] transition-all  items-center gap-4 text-md uppercase bg-[#1C161A] text-slate-50 px-9 py-3`}><IoBagHandleOutline className='text-2xl' />Add To Bag</button>
                         <button className='flex items-center gap-4 text-md uppercase border-slate-400 border  px-7 py-3'><IoMdHeartEmpty className='text-2xl text-red-600' />Wishlist</button>
 
                     </div>
