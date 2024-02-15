@@ -21,11 +21,11 @@ const CartDetails = () => {
     const items = useSelector(store => store.cart.items)
     const totalPrice = useSelector(store => store.cart.totalPrice)
     return <div className='flex justify-center items-center mt-10   '>
-        <div className='w-[60%] bg-slate-200 flex  justify-center h-max py-10'>
+        <div className='w-[60%] bg-slate-200 flex  justify-center h-max py-10 px-5'>
             <div className='flex gap-10 flex-wrap justify-center'>
                 <div className=' px-4'>
                     {/* left box with items */}
-                    <div className='flex flex-col gap-2'>
+                    <div className='flex flex-col gap-2 px-3'>
                         <h1 className='flex items-center text-lg'><BiSolidOffer className='text-xl' />
                             Available Offers</h1>
                         <h2 className='font-sans'>10% instant discount on HDFC bank credit and debit cards</h2>
@@ -51,7 +51,7 @@ const CartDetails = () => {
                         })}
                     </div>
                 </div>
-                <div>
+                <div className='px-5'>
                     {/* right box with summary */}
                     <h1 className='text-lg flex items-center gap-1'>Order Summary<SiMoneygram />
                     </h1>
