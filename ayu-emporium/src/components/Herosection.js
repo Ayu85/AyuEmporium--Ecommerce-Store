@@ -4,11 +4,15 @@ import Header from './Header'
 import { motion } from 'framer-motion'
 import blob from '../assets/blob vector.png'
 import { useLocation } from 'react-router-dom'
+import { RxHamburgerMenu } from "react-icons/rx";
+
 const Herosection = () => {
 
   return (
     <div className=' flex relative flex-col gap-16 justify-center items-center  h-[110vh] bg-[#FFB71B] '>
       <Header />
+      <nav className='fixed top-0 bg-[#1c161aa7] backdrop-blur-md cursor-pointer py-3 w-full lg:hidden md:hidden text-white text-4xl pl-3'><RxHamburgerMenu />
+</nav>
       {/* <img src='https://cdn.shopify.com/s/files/1/0393/0007/1555/files/christmas_elements-desktop.png?v=1701336847' */}
       {/* alt='bg' className='absolute -z-0' /> */}
       <div className='flex lg:flex-nowrap md:flex-nowrap flex-wrap items-center lg:justify-between md:justify-between sm:mt-20 justify-center  w-[75%]'>
