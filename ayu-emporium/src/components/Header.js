@@ -7,6 +7,7 @@ import { FiUser } from "react-icons/fi";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 import { toogleCategories } from './redux/slices/showCategories'
 import { useNavigate } from 'react-router-dom';
@@ -98,8 +99,8 @@ export const Header2 = () => {
     const [showDropdown, setDropdown] = useState(false)
     const cartItems = useSelector(store => store.cart.items)
     const navigate = useNavigate()
-   
-    return <div className='w-full cursor-pointer bg-[#1C161A] py-4 px-10 flex justify-between'>
+
+    return <div className='w-full cursor-pointer bg-[#1C161A] py-4 px-10 flex justify-between items-center'>
         <div onClick={() => {
             navigate('/')
         }}><h1 className='page_title text-3xl text-[#FFB71B]'>AyuEmporium</h1></div>
@@ -150,6 +151,7 @@ export const Header2 = () => {
             </div>
 
         </div>
+        <div className='text-white text-3xl lg:hidden'><RxHamburgerMenu /></div>
     </div>
 }
 
