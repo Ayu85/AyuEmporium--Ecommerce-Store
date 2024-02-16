@@ -161,8 +161,10 @@ export const Header2 = () => {
 
             </div>
             <ul className='text-xl py-3 flex flex-col gap-3 mt-10 '>
-                {['Home', 'About', 'Shop', 'My Account', `Cart`, 'Become a Seller'].map((list) => {
-                    return <li className='cursor-pointer hover:text-[#FFB71B]'>{list}</li>
+                {['Home', 'About', 'Shop', 'My Account', `Cart`, 'Become a Seller'].map((list,key) => {
+                    return <li className='cursor-pointer hover:text-[#FFB71B]' onClick={() => {
+                        key===4 && navigate('/cart') && setHam(false)
+                    }}>{list}</li>
                 })}
             </ul>
         </div>
