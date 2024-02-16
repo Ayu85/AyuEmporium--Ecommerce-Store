@@ -1,12 +1,13 @@
 import React from 'react'
 import { Header2 } from './Header'
 import { BiSolidOffer } from "react-icons/bi";
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { MdDeleteForever } from "react-icons/md";
 import { MdCurrencyRupee } from "react-icons/md";
 import { SiMoneygram } from "react-icons/si";
 import sadlogo from '../assets/sad.png'
 import emptycart2 from '../assets/emptycart2.png'
+import { deleteItem } from './redux/slices/cartSlice';
 const Cart = () => {
     const items = useSelector(store => store.cart.items)
 
@@ -20,6 +21,7 @@ const Cart = () => {
 const CartDetails = () => {
     const items = useSelector(store => store.cart.items)
     const totalPrice = useSelector(store => store.cart.totalPrice)
+    const dispatch = useDispatch()
     return <div className='flex justify-center items-center mt-10   '>
         <div className='w-[60%] bg-slate-200 flex  justify-center h-max py-10 px-5'>
             <div className='flex gap-10 flex-wrap justify-center'>
@@ -33,7 +35,7 @@ const CartDetails = () => {
                     </div>
                     <div className='flex flex-col mt-5 gap-6'>
                         <h1 className='text-xl fw-semibold'>Items In Bag</h1>
-                        {items.map((prod) => {
+                        {items.map((prod, key) => {
                             return <div className='flex gap-4'>
                                 <div>
                                     <img src={prod?.logo} alt='logo' className='w-20' />
@@ -43,7 +45,9 @@ const CartDetails = () => {
                                     <h1><span className='page_title'>Size: </span>{prod?.size}</h1>
                                     <h1 className='flex items-center'><span className='page_title'>Price:  </span> <MdCurrencyRupee className='pl-1 text-lg' />
                                         {prod?.price}</h1>
-                                    <button className='text-red-600  text-3xl hover:scale-110 transition-all mt-1 cursor-pointer'><MdDeleteForever />
+                                    <button onClick={() => {
+                                        dispatch(deleteItem(key))
+                                    }} className='text-red-600  text-3xl hover:scale-110 transition-all mt-1 cursor-pointer'><MdDeleteForever />
                                     </button>
                                 </div>
 
