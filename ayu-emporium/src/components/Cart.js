@@ -7,7 +7,7 @@ import { MdCurrencyRupee } from "react-icons/md";
 import { SiMoneygram } from "react-icons/si";
 import sadlogo from '../assets/sad.png'
 import emptycart2 from '../assets/emptycart2.png'
-import { deleteItem } from './redux/slices/cartSlice';
+import { deleteItem, reducePrice } from './redux/slices/cartSlice';
 const Cart = () => {
     const items = useSelector(store => store.cart.items)
 
@@ -47,6 +47,7 @@ const CartDetails = () => {
                                         {prod?.price}</h1>
                                     <button onClick={() => {
                                         dispatch(deleteItem(key))
+                                        dispatch(reducePrice(prod?.price))
                                     }} className='text-red-600  text-3xl hover:scale-110 transition-all mt-1 cursor-pointer'><MdDeleteForever />
                                     </button>
                                 </div>
