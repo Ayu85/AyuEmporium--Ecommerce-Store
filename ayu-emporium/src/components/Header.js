@@ -101,6 +101,7 @@ export const Header2 = () => {
     const [showDropdown, setDropdown] = useState(false)
     const cartItems = useSelector(store => store.cart.items)
     const navigate = useNavigate()
+    const dispatch = useDispatch()
     const [showHamMenu, setHam] = useState(false);
     return <div className='w-full cursor-pointer bg-[#1C161A] py-4 px-10 flex justify-between items-center'>
         <div onClick={() => {
@@ -131,7 +132,9 @@ export const Header2 = () => {
                 <div className='flex flex-col border-b border-slate-300 pb-4'>
                     <h1 className='text-[#282C3F] font-bold text-md '>Welcome</h1>
                     <h1 className='text-slate-600 font-light text-sm  '>To Access Account and Manage Orders</h1>
-                    <button className='px-2 py-1 text-[#ffb71b] text-sm border w-28 mt-1 bg-black border-slate-500'> Login/Signup</button>
+                    <button className='px-2 py-1 text-[#ffb71b] text-sm border w-28 mt-1 bg-black border-slate-500' onClick={() => {
+                        dispatch(toogleModal())
+                    }} > Login/Signup</button>
                 </div>
                 <ul className='flex flex-col border-b border-slate-300 pb-4 pt-3 gap-1 text-slate-600 text-sm'>
                     {
