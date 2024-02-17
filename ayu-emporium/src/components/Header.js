@@ -8,7 +8,7 @@ import { IoBagHandleOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
-
+import { toogleModal } from './redux/slices/login_modal'
 import { toogleCategories } from './redux/slices/showCategories'
 import { useNavigate } from 'react-router-dom';
 const Header = () => {
@@ -40,7 +40,9 @@ const Header = () => {
             <div><h1 className='page_title -ml-14 text-3xl text-[#FFB71B]'>AyuEmporium</h1></div>
             <div className='flex gap-4 items-center'>
                 <button className='px-6 py-1 rounded-full bg-white text-sm   '>ORDER NOW</button>
-                <FaUserCircle className='text-white text-2xl' />
+                <FaUserCircle className='text-white text-2xl cursor-pointer' onClick={() => {
+                    dispatch(toogleModal())
+                }} />
                 <ImCart className='text-white text-xl' />
             </div>
             {showCategories && <div className={` absolute flex transition-all  justify-evenly pt-2 top-20 w-full left-0 bg-white h-56 px-5 rounded-b-2xl `}>
@@ -119,7 +121,7 @@ export const Header2 = () => {
                 setDropdown(false)
 
             }} className='flex page_title flex-col items-center relative cursor-pointer hover:text-[#ffb71b]'>
-                <FiUser /><span className='text-sm'>Profile</span>
+                <FiUser className='cursor-pointer' /><span className='text-sm'>Profile</span>
             </div>
             <div onMouseEnter={() => {
                 setDropdown(true)
@@ -161,9 +163,9 @@ export const Header2 = () => {
 
             </div>
             <ul className='text-xl py-3 flex flex-col gap-3 mt-10 '>
-                {['Home', 'About', 'Shop', 'My Account', `Cart`, 'Become a Seller'].map((list,key) => {
+                {['Home', 'About', 'Shop', 'My Account', `Cart`, 'Become a Seller'].map((list, key) => {
                     return <li className='cursor-pointer hover:text-[#FFB71B]' onClick={() => {
-                        key===4 && navigate('/cart') && setHam(false)
+                        key === 4 && navigate('/cart') && setHam(false)
                     }}>{list}</li>
                 })}
             </ul>

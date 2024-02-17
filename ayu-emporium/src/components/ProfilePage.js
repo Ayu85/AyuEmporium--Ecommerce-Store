@@ -2,11 +2,17 @@ import React from 'react'
 import logo from '../assets/login pic.png'
 import { FcGoogle } from "react-icons/fc";
 import { RxCross1 } from "react-icons/rx";
+import { useDispatch, useSelector } from 'react-redux';
+import { toogleModal } from './redux/slices/login_modal';
 
 const ProfilePage = () => {
-  return <div className={`${showLogin && "flex"} absolute hidden  flex-col justify-start bg-[#00000084] backdrop-blur-xl text-white items-center z-[99999] w-screen h-[100vh]`}>
+  const dispatch = useDispatch()
+  const showLogin = useSelector(store => store.loginmodal.value)
+  return showLogin && <div className={` absolute flex   flex-col justify-start bg-[#00000084] backdrop-blur-xl text-white items-center z-[99999] w-screen h-[100vh]`}>
     {/* modal box*/}
-    <div className='flex justify-between text-4xl items-center w-full px-20 page_title py-4 bg-white text-black'><h1>Login/Sign up</h1><span><RxCross1 className='cursor-pointer' /></span></div>
+    <div className='flex justify-between text-4xl items-center w-full px-20 page_title py-4 bg-white text-black'><h1>Login/Sign up</h1><span><RxCross1 className='cursor-pointer' onClick={() => {
+      dispatch(toogleModal())
+    }} /></span></div>
     <div className='flex justify-between gap-44 items-center  px-10 mt-20'>
       {/* this is inner box containing login box and image */}
       <div>
