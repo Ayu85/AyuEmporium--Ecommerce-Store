@@ -1,12 +1,14 @@
 import React from 'react'
 import logo from '../assets/login pic.png'
 import { FcGoogle } from "react-icons/fc";
+import { RxCross1 } from "react-icons/rx";
 
 const ProfilePage = () => {
   return (
-    <div className='absolute flex justify-center bg-[#00000084] backdrop-blur-lg text-white items-center z-[99999] w-screen h-[100vh]'>
+    <div className='absolute flex flex-col justify-start bg-[#00000084] backdrop-blur-lg text-white items-center z-[99999] w-screen h-[100vh]'>
       {/* modal box*/}
-      <div className='flex justify-between gap-44 items-center  px-10 '>
+      <div className='flex justify-between text-4xl items-center w-full px-20 page_title py-4 bg-white text-black'><h1>Login/Sign up</h1><span><RxCross1 /></span></div>
+      <div className='flex justify-between gap-44 items-center  px-10 mt-20'>
         {/* this is inner box containing login box and image */}
         <div>
           {/* left box in modal */}
