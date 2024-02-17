@@ -16,11 +16,11 @@ const Herosection = () => {
   return (
     <div className=' flex relative flex-col gap-16 justify-center items-center  h-[110vh] bg-[#FFB71B] '>
       <Header />
-      <nav className='fixed top-0  bg-[#1c161ac8] backdrop-blur-md cursor-pointer py-3 w-full lg:hidden  text-white text-4xl pl-3'><RxHamburgerMenu onClick={() => {
+      <nav className='fixed z-[9999] top-0  bg-[#1c161ac8] backdrop-blur-md cursor-pointer py-3 w-full lg:hidden  text-white text-4xl pl-3'><RxHamburgerMenu onClick={() => {
         setHam(!showHamMenu)
       }} />
       </nav>
-      {<div className={`fixed lg:hidden flex flex-col top-0 text-white  h-[100vh] px-10 bg-[#1c161ac8] backdrop-blur-md   ${!showHamMenu && "-translate-x-[1200px] transition-all duration-300"} ${showHamMenu && "translate-x-0 transition-all duration-300"}  z-[999999] backdrop-blur-md w-screen `}>
+      {<div className={`fixed  lg:hidden flex flex-col top-0 text-white  h-[100vh] px-10 bg-[#1c161ac8] backdrop-blur-md   ${!showHamMenu && "-translate-x-[1200px] transition-all duration-300"} ${showHamMenu && "translate-x-0 transition-all duration-300"}  z-[999999] backdrop-blur-md w-screen `}>
         <div className='flex justify-between text-4xl py-3'><h1 className='page_title text-[#FFB71B]  text-4xl '>AyuEmporium</h1> <RxCross1 className='cursor-pointer active:scale-150 transition-all' onClick={() => {
           setHam(false)
         }} />
@@ -35,8 +35,8 @@ const Herosection = () => {
       }
       {/* <img src='https://cdn.shopify.com/s/files/1/0393/0007/1555/files/christmas_elements-desktop.png?v=1701336847' */}
       {/* alt='bg' className='absolute -z-0' /> */}
-      <div className='flex lg:flex-nowrap md:flex-nowrap flex-wrap items-center lg:justify-between md:justify-between sm:mt-20 justify-center  w-[75%]'>
-        <div className='text-black text-center lg:text-start md:text-start page_title'>
+      <div className='flex z-[999] lg:flex-nowrap md:flex-nowrap flex-wrap items-center lg:justify-between md:justify-between sm:mt-20 justify-center  w-[75%]'>
+        <div className='text-black z-[999] text-center lg:text-start md:text-start page_title'>
           {
             ['Shop', 'Click', 'Thrive:Your E-Commerce Destination'].map((items, key) => {
               return <h1 className={`lg:text-6xl md:text-5xl text-5xl  hero_title py-3
@@ -47,7 +47,7 @@ const Herosection = () => {
             })
           }
         </div>
-        <div className='-mr-16 mt-10 relative w-[450px] hidden md:block lg:block'>
+        <div className='-mr-16 mt-10 relative w-[450px] hidden md:block lg:block z-[999]'>
           <img src={heroImg} alt='logo' className='w-[450px] z-50 relative' />
           <img src={blob} alt='blob' className='hidden md:block lg:block absolute w-[450px] lg:top-44 md:top-20  z-10 animate-[spin_linear_3s_infinite]' />
         </div>
