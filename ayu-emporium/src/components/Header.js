@@ -13,6 +13,11 @@ import { toogleCategories } from './redux/slices/showCategories'
 import { useNavigate } from 'react-router-dom';
 const Header = () => {
     const [isScrolled, setScrolled] = useState(false)
+    const [ht, setht] = useState(0)
+
+    window.addEventListener('scroll', (e) => {
+        setht(window.scrollY)
+    })
     const checkScroll = () => {
         window.scrollY > 100 ? setScrolled(true) : setScrolled(false)
     }
@@ -40,7 +45,7 @@ const Header = () => {
             <div><h1 className='page_title -ml-14 text-3xl text-[#FFB71B]'>AyuEmporium</h1></div>
             <div className='flex gap-4 items-center'>
                 <button className='px-6 py-1 rounded-full bg-white text-sm   '>ORDER NOW</button>
-                <FaUserCircle className='text-white text-2xl cursor-pointer' onClick={() => {
+                <FaUserCircle className={` text-white ${ht > 200 && "hidden"} text-2xl cursor-pointer`} onClick={() => {
                     dispatch(toogleModal())
                 }} />
                 <ImCart className='text-white text-xl' />
