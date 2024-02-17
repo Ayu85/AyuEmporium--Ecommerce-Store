@@ -22,7 +22,7 @@ const Header = () => {
     const dispatch = useDispatch();
     const showCategories = useSelector(store => store.categoriesView.value)
     return (
-        <div className={`lg:flex  hidden  rounded-2xl  items-center fixed top-8 z-[999999] 
+        <div className={`lg:flex  hidden  rounded-2xl  items-center fixed top-8 z-[999] 
         justify-between  px-5 bg-[#1C161A] w-[75%] ${isScrolled ? "bg-[#1c161ab4] backdrop-blur-md" : 'bg-[#1C161A]'}  `} >
             <div >
                 <ul className='flex gap-4  text-md  text-white tracking-wide cursor-pointer'> {
