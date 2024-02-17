@@ -11,10 +11,10 @@ const ProfilePage = () => {
           <h1 className='text-3xl font-bold'>Login</h1>
           <form className='flex flex-col  '>
             <label for='email' />Enter Email Address:<label/>
-            <input type='mail' placeholder='Enter Email...' />
+            <input type='mail' placeholder='Enter Email...' className='w-96 py-3 rounded-lg pl-2 text-black outline-none focus:border-yellow-500 border-2' />
             <label for='email' />Enter Password:<label/>
-            <input type='mail' placeholder='Enter Password...' />
-            <button>Login</button>
+            <input type='mail' placeholder='Enter Password...' className='w-96 py-3 rounded-lg pl-2 text-black outline-none focus:border-yellow-500 border-2' />
+            <button className='w-96 py-3 rounded-lg pl-2 bg-black text-white'>Login</button>
           </form>
 
         </div>
