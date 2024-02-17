@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './Header'
 import Herosection from './Herosection'
 import Slidingtext from './Slidingtext'
@@ -7,13 +7,14 @@ import Categories from './Categories'
 import ProfilePage from './ProfilePage'
 
 const Body = () => {
+
     return (
         <div className='overflow-hidden'>
-            <ProfilePage/>
+            <ProfilePage />
             <Herosection />
-            <Slidingtext/>
-            <Whyus/>
-            <Categories/>
+            <Slidingtext />
+            <Whyus />
+            <Categories />
         </div>
     )
 }
