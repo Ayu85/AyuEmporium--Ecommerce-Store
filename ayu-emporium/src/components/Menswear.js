@@ -6,6 +6,7 @@ import ProductCard from './ProductCard,'
 import { BANNER_URL } from './utils/constants'
 import { Link, useLocation } from 'react-router-dom'
 import Breadcrums from './Breadcrums'
+import ProfilePage from './ProfilePage'
 const Menswear = () => {
     const location = useLocation()
     console.log(location);
@@ -24,20 +25,23 @@ const Menswear = () => {
     }
 
     return (
-        <div className='flex flex-col items-start justify-center overflow-hidden'>
-            <Header2 />
-            <div className=' flex transition-all duration-500 '>
-                <img src={BANNER_URL[currentBanner]} alt='banner' className='w-screen h-[100vh]' />
-            </div>
-            {/* <Breadcrums path={location.pathname} /> */}
-            <div className='flex gap-5 mt-10 flex-wrap justify-center '>
-                {
-                    menswear.map((product, keys) => {
-                        return <Link to={`/details/${product.id}`}><ProductCard {...product} /></Link>
-                    })
-                }
-            </div>
-        </div>
+
+        <>
+            <ProfilePage />
+            <div className='flex flex-col items-start justify-center overflow-hidden'>
+                <Header2 />
+                <div className=' flex transition-all duration-500 '>
+                    <img src={BANNER_URL[currentBanner]} alt='banner' className='w-screen h-[100vh]' />
+                </div>
+                {/* <Breadcrums path={location.pathname} /> */}
+                <div className='flex gap-5 mt-10 flex-wrap justify-center '>
+                    {
+                        menswear.map((product, keys) => {
+                            return <Link to={`/details/${product.id}`}><ProductCard {...product} /></Link>
+                        })
+                    }
+                </div>
+            </div></>
     )
 }
 
