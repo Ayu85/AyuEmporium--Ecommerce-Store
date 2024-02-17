@@ -8,7 +8,7 @@ import { toogleModal } from './redux/slices/login_modal';
 const ProfilePage = () => {
   const dispatch = useDispatch()
   const showLogin = useSelector(store => store.loginmodal.value)
-  return <div className={` ${showLogin && "translate-y-[0px] transition-all duration-200"} ${!showLogin && "-translate-y-[2000px] transition-all duration-200"} ${!showLogin && "-translate-y-[2000px] transition-all duration-700"} absolute flex   flex-col justify-start bg-[#00000084] backdrop-blur-xl text-white items-center z-[99999] w-screen h-[100vh]`}>
+  return <div className={` ${showLogin && "translate-y-[0px] transition-all duration-200 top-0"} ${!showLogin && "-translate-y-[2000px] transition-all duration-200"} ${!showLogin && "-translate-y-[2000px] transition-all duration-700"} absolute flex   flex-col justify-start bg-[#00000084] backdrop-blur-xl text-white items-center z-[99999] w-screen h-[100vh]`}>
     {/* modal box*/}
     <div className='flex justify-between text-4xl items-center w-full px-20 page_title py-4 bg-white text-black'><h1>Login/Sign up</h1><span><RxCross1 className='cursor-pointer' onClick={() => {
       dispatch(toogleModal())

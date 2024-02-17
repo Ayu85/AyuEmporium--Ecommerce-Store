@@ -48,8 +48,8 @@ const Details = () => {
     const location = useLocation();
     return <>
         {/* <Breadcrums path={location.pathname} prod={data?.name} /> */}
+        <ProfilePage />
         <div className='flex flex-wrap lg:flex-nowrap md:flex-nowrap px-5 pt-10 h-max lg:pr-44 md:pr-24 justify-center gap-10'>
-            <ProfilePage/>
             <div className='flex flex-wrap gap-3'>
                 {/* all 4 images */}
                 <div className='w-[420px] overflow-hidden cursor-pointer'><img src={data?.display_images[0]} alt='logo' className='w-[420px] hover:scale-110 transition-all duration-200 hover:saturate-200' /> </div>
