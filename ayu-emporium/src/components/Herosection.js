@@ -36,7 +36,7 @@ const Herosection = () => {
       {/* <img src='https://cdn.shopify.com/s/files/1/0393/0007/1555/files/christmas_elements-desktop.png?v=1701336847' */}
       {/* alt='bg' className='absolute -z-0' /> */}
       <div className='flex lg:flex-nowrap md:flex-nowrap flex-wrap items-center lg:justify-between md:justify-between sm:mt-20 justify-center  w-[75%]'>
-        <div className='text-black text-center lg:text-start md:text-start'>
+        <div className='text-black text-center lg:text-start md:text-start page_title'>
           {
             ['Shop', 'Click', 'Thrive:Your E-Commerce Destination'].map((items, key) => {
               return <h1 className={`lg:text-6xl md:text-5xl text-5xl  hero_title py-3
