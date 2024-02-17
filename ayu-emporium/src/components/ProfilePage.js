@@ -13,7 +13,7 @@ const ProfilePage = () => {
     <div className='flex justify-between text-4xl items-center w-full px-20 page_title py-4 bg-white text-black'><h1>Login/Sign up</h1><span><RxCross1 className='cursor-pointer' onClick={() => {
       dispatch(toogleModal())
     }} /></span></div>
-    <div className='flex justify-between gap-44 items-center  px-10 mt-20'>
+    <div className='flex justify-between lg:gap-44 md:gap-44 gap-0 items-center   px-10 mt-20'>
       {/* this is inner box containing login box and image */}
       <div>
         {/* left box in modal */}
@@ -33,7 +33,7 @@ const ProfilePage = () => {
       </div>
       <div>
         {/* right box in modal */}
-        < img src={logo} alt='logo' className='w-[300px]' />
+        < img src={logo} alt='logo' className='w-[300px] lg:block md:block hidden' />
       </div></div>
   </div>
 
